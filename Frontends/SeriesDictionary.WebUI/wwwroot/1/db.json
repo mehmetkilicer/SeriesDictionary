@@ -1,0 +1,3339 @@
+{
+  "consonants": [
+    {
+      "en": "-",
+      "tone": "alef",
+      "he": "א",
+      "audio": "https://static.memrise.com/uploads/things/audio/105193004_160505_0852_22.mp3"
+    },
+    {
+      "en": "b",
+      "tone": "bet",
+      "he": "בּ",
+      "audio": "https://static.memrise.com/uploads/things/audio/105193009_160505_0852_50.mp3"
+    },
+    {
+      "en": "v",
+      "tone": "vet",
+      "he": "ב",
+      "audio": "https://static.memrise.com/uploads/things/audio/105193167_160505_0852_55.mp3"
+    },
+    {
+      "en": "g",
+      "tone": "gimel",
+      "he": "ג",
+      "audio": "https://static.memrise.com/uploads/things/audio/105193014_160505_0853_14.mp3"
+    },
+    {
+      "en": "d",
+      "tone": "dalet",
+      "he": "ד",
+      "audio": "https://static.memrise.com/uploads/things/audio/105193015_160505_0853_17.mp3"
+    },
+    {
+      "en": "h",
+      "tone": "he",
+      "he": "ה",
+      "audio": "https://static.memrise.com/uploads/things/audio/105193017_160505_0853_21.mp3"
+    },
+    {
+      "en": "v, w",
+      "tone": "vav",
+      "he": "ו",
+      "audio": "https://static.memrise.com/uploads/things/audio/105193020_160505_0853_24.mp3"
+    },
+    {
+      "en": "z",
+      "tone": "zayin",
+      "he": "ז",
+      "audio": "https://static.memrise.com/uploads/things/audio/105193023_160505_0853_25.mp3"
+    },
+    {
+      "en": "ch",
+      "tone": "chet",
+      "he": "ח",
+      "audio": "https://static.memrise.com/uploads/things/audio/105193025_160505_0853_29.mp3"
+    },
+    {
+      "en": "t",
+      "tone": "tet",
+      "he": "ט",
+      "audio": "https://static.memrise.com/uploads/things/audio/105193028_160505_0853_32.mp3"
+    },
+    {
+      "en": "y",
+      "tone": "yod",
+      "he": "י",
+      "audio": "https://static.memrise.com/uploads/things/audio/105193033_160505_0853_34.mp3"
+    },
+    {
+      "en": "k",
+      "tone": "caf",
+      "he": "כּ",
+      "audio": "https://static.memrise.com/uploads/things/audio/105193037_160505_0856_17.mp3"
+    },
+    {
+      "en": "ch",
+      "tone": "chaf",
+      "he": "כ",
+      "audio": "https://static.memrise.com/uploads/things/audio/105193041_160505_0856_17.mp3"
+    },
+    {
+      "en": "ch",
+      "tone": "chaf sofit",
+      "he": "ך",
+      "audio": "https://static.memrise.com/uploads/things/audio/105198800_160505_0859_45.mp3"
+    },
+    {
+      "en": "l",
+      "tone": "lamed",
+      "he": "ל",
+      "audio": "https://static.memrise.com/uploads/things/audio/105193044_160505_0854_08.mp3"
+    },
+    {
+      "en": "m",
+      "tone": "mem",
+      "he": "מ",
+      "audio": "https://static.memrise.com/uploads/things/audio/105193048_160505_0854_01.mp3"
+    },
+    {
+      "en": "m",
+      "tone": "mem sofit",
+      "he": "ם",
+      "audio": "https://static.memrise.com/uploads/things/audio/105198753_160505_0859_26.mp3"
+    },
+    {
+      "en": "n",
+      "tone": "nun",
+      "he": "נ",
+      "audio": "https://static.memrise.com/uploads/things/audio/105193051_160505_0854_01.mp3"
+    },
+    {
+      "en": "n",
+      "tone": "nun sofit",
+      "he": "ן",
+      "audio": "https://static.memrise.com/uploads/things/audio/105198759_160505_0859_33.mp3"
+    },
+    {
+      "en": "s",
+      "tone": "samech",
+      "he": "ס",
+      "audio": "https://static.memrise.com/uploads/things/audio/105193057_160505_0854_07.mp3"
+    },
+    {
+      "en": "",
+      "tone": "ayin",
+      "he": "ע",
+      "audio": "https://static.memrise.com/uploads/things/audio/105193060_160505_0854_12.mp3"
+    },
+    {
+      "en": "p",
+      "tone": "pey",
+      "he": "פּ",
+      "audio": "https://static.memrise.com/uploads/things/audio/105193064_160505_0854_10.mp3"
+    },
+    {
+      "en": "f",
+      "tone": "fey",
+      "he": "פ",
+      "audio": "https://static.memrise.com/uploads/things/audio/105193098_160505_0854_11.mp3"
+    },
+    {
+      "en": "f",
+      "tone": "fey sofit",
+      "he": "ף",
+      "audio": "https://static.memrise.com/uploads/things/audio/105198788_160505_0859_41.mp3"
+    },
+    {
+      "en": "ts",
+      "tone": "tsadi",
+      "he": "צ",
+      "audio": "https://static.memrise.com/uploads/things/audio/105193071_160505_0854_13.mp3"
+    },
+    {
+      "en": "ts",
+      "tone": "tsadi sofit",
+      "he": "ץ",
+      "audio": "https://static.memrise.com/uploads/things/audio/105198763_160505_0859_34.mp3"
+    },
+    {
+      "en": "k",
+      "tone": "cuf",
+      "he": "ק",
+      "audio": "https://static.memrise.com/uploads/things/audio/105193074_160505_0854_16.mp3"
+    },
+    {
+      "en": "r",
+      "tone": "resh",
+      "he": "ר",
+      "audio": "https://static.memrise.com/uploads/things/audio/105193078_160505_0854_17.mp3"
+    },
+    {
+      "en": "sh",
+      "tone": "shin",
+      "he": "שׁ",
+      "audio": "https://static.memrise.com/uploads/things/audio/105193079_160505_0854_20.mp3"
+    },
+    {
+      "en": "s",
+      "tone": "sin",
+      "he": "שׂ",
+      "audio": "https://static.memrise.com/uploads/things/audio/105193082_160505_0854_25.mp3"
+    },
+    {
+      "en": "t",
+      "tone": "tav",
+      "he": "ת",
+      "audio": "https://static.memrise.com/uploads/things/audio/105193086_160505_0854_26.mp3"
+    }
+  ],
+  "vowels": [
+    {
+      "en": "aleph with kamatz",
+      "tone": "'a' (sometimes 'o')",
+      "he": "אָ",
+      "audio": ""
+    },
+    {
+      "en": "aleph with hataf kamatz",
+      "tone": "'o' as in 'noon' or as in 'law'",
+      "he": "אָ",
+      "audio": ""
+    },
+    {
+      "en": "aleph with patach",
+      "tone": "ah",
+      "he": "אַ",
+      "audio": ""
+    },
+    {
+      "en": "aleph with tzere",
+      "tone": "long 'ay'",
+      "he": "אֵ",
+      "audio": ""
+    },
+    {
+      "en": "aleph with segol",
+      "tone": "short 'eh'",
+      "he": "אֶ",
+      "audio": ""
+    },
+    {
+      "en": "aleph with hiriq",
+      "tone": "short 'ih'",
+      "he": "אִ",
+      "audio": ""
+    },
+    {
+      "en": "aleph with hiriq next to yod",
+      "tone": "long 'ee'",
+      "he": "אִי",
+      "audio": ""
+    },
+    {
+      "en": "aleph with qubutz",
+      "tone": "short 'oo' as in book",
+      "he": "אֻ",
+      "audio": ""
+    },
+    {
+      "en": "aleph with chataf segol",
+      "tone": "super short 'e'",
+      "he": "אֱ",
+      "audio": ""
+    },
+    {
+      "en": "aleph with chataf patach",
+      "tone": "super short 'a'",
+      "he": "אֲ",
+      "audio": ""
+    },
+    {
+      "en": "gimel with a geresh",
+      "tone": "j",
+      "he": "ג׳",
+      "audio": ""
+    },
+    {
+      "en": "vav with cholam",
+      "tone": "oh",
+      "he": "וֹ",
+      "audio": ""
+    },
+    {
+      "en": "vav with shuruk",
+      "tone": "ooh",
+      "he": "וּ",
+      "audio": ""
+    },
+    {
+      "en": "ch",
+      "tone": "tsadi with a geresh",
+      "he": "צ׳",
+      "audio": ""
+    },
+    {
+      "en": "ch",
+      "tone": "tsadi sofit with a geresh",
+      "he": "ץ׳",
+      "audio": ""
+    },
+    {
+      "en": "zayin with a geresh",
+      "tone": "j",
+      "he": "ז׳",
+      "audio": ""
+    }
+  ],
+  "pronoun": [
+    {
+      "en": "I",
+      "tone": "anii",
+      "he": "אֲנִי",
+      "audio": "https://static.memrise.com/uploads/things/audio/186526495_1526396284709.mp3"
+    },
+    {
+      "en": "(m) you",
+      "tone": "ata",
+      "he": "אַתָּה",
+      "audio": "http://www.yallahebrew.com/wp-content/uploads/2018/09/you-masculine-singular-hebrew-translation.mp3"
+    },
+    {
+      "en": "(f) you",
+      "tone": "at",
+      "he": "אַתְּ",
+      "audio": "http://www.yallahebrew.com/wp-content/uploads/2018/09/you-feminine-singular-hebrew-translation.mp3"
+    },
+    {
+      "en": "he; him; it",
+      "tone": "hu",
+      "he": "הוּא",
+      "audio": "http://www.yallahebrew.com/wp-content/uploads/2018/09/he-hebrew-translation-2.mp3"
+    },
+    {
+      "en": "she; her; it",
+      "tone": "hiy",
+      "he": "הִיא",
+      "audio": "http://www.yallahebrew.com/wp-content/uploads/2018/10/she-in-hebrew-translation.mp3"
+    },
+    {
+      "en": "we",
+      "tone": "anach'nu",
+      "he": "אֲנַחְנוּ",
+      "audio": "http://www.yallahebrew.com/wp-content/uploads/2018/09/we-hebrew-translation.mp3"
+    },
+    {
+      "en": "(m) y'all",
+      "tone": "atem",
+      "he": "אַתֶּם",
+      "audio": "https://lang_src.s3.amazonaws.com/391_h.mp3"
+    },
+    {
+      "en": "(f) y'all",
+      "tone": "aten",
+      "he": "אַתֶּן",
+      "audio": "https://lang_src.s3.amazonaws.com/392_h.mp3"
+    },
+    {
+      "en": "(m) they",
+      "tone": "hem",
+      "he": "הֵם",
+      "audio": "http://www.yallahebrew.com/wp-content/uploads/2018/09/they-masculine-hebrew-translation.mp3"
+    },
+    {
+      "en": "(f) they",
+      "tone": "hen",
+      "he": "הֵן",
+      "audio": "https://lang_src.s3.amazonaws.com/394_h.mp3"
+    },
+    {
+      "en": "all; any; each; every",
+      "tone": "kol",
+      "he": "כֹּל",
+      "audio": "http://www.yallahebrew.com/wp-content/uploads/2018/09/each-hebrew-translation.mp3"
+    },
+    {
+      "en": "everything",
+      "tone": "hakol",
+      "he": "הַכֹּל",
+      "audio": ""
+    },
+    {
+      "en": "of",
+      "tone": "shel",
+      "he": "שֶׁל",
+      "audio": ""
+    },
+    {
+      "en": "what",
+      "tone": "ma",
+      "he": "מַה",
+      "audio": "http://www.yallahebrew.com/wp-content/uploads/2018/09/what-hebrew-translation.mp3"
+    },
+    {
+      "en": "who",
+      "tone": "mi",
+      "he": "מִי",
+      "audio": "https://lang_src.s3.amazonaws.com/053_he201504.mp3"
+    }
+  ],
+  "article": [
+    {
+      "en": "the",
+      "tone": "he",
+      "he": "ה",
+      "audio": "https://lang_src.s3.amazonaws.com/he_h.mp3"
+    },
+    {
+      "en": "the (before חָ and unaccented הָ and עָ)",
+      "tone": "he",
+      "he": "הֶ",
+      "audio": "https://lang_src.s3.amazonaws.com/041_he201504.mp3"
+    },
+    {
+      "en": "the (before ordinary letters; before harsh gutturals ח and ה)",
+      "tone": "ha",
+      "he": "הַ",
+      "audio": "https://lang_src.s3.amazonaws.com/040_he201504.mp3"
+    },
+    {
+      "en": "the (before weaker gutturals ע ,א, and ר; before accented הָ and עָ)",
+      "tone": "ha",
+      "he": "הָ",
+      "audio": "https://lang_src.s3.amazonaws.com/040_he201504.mp3"
+    }
+  ],
+  "prepositions": [
+    {
+      "en": "from; of; than",
+      "tone": "me",
+      "he": "מִ",
+      "audio": "http://www.yallahebrew.com/wp-content/uploads/2018/09/from-hebrew-translation.mp3"
+    },
+    {
+      "en": "for, to, for the sake of",
+      "tone": "bishvil",
+      "he": "בִּשְׁבִיל",
+      "audio": "http://www.yallahebrew.com/wp-content/uploads/2018/09/for-the-sake-of-hebrew-translation.mp3"
+    },
+    {
+      "en": "in; with; by",
+      "tone": "be-",
+      "he": "-בְּ",
+      "audio": "https://lang_src.s3.amazonaws.com/bet.mp3"
+    },
+    {
+      "en": "and",
+      "tone": "ve",
+      "he": "וְ",
+      "audio": [
+        "http://www.yallahebrew.com/wp-content/uploads/2018/09/and-hebrew-translation.mp3",
+        "http://www.yallahebrew.com/wp-content/uploads/2018/09/And-in-hebrew-translation.mp3"
+      ]
+    },
+    {
+      "en": "instead of, in place of",
+      "tone": "bimcom",
+      "he": "בִּמְקוֹם",
+      "audio": "http://www.yallahebrew.com/wp-content/uploads/2018/10/instead-of-in-hebrew-translation.mp3"
+    },
+    {
+      "en": "on",
+      "tone": "al",
+      "he": "עַל",
+      "audio": "https://lang_src.s3.amazonaws.com/026_he201504.mp3"
+    },
+    {
+      "en": "with",
+      "tone": "im",
+      "he": "עִם",
+      "audio": "http://www.yallahebrew.com/wp-content/uploads/2018/10/with-in-hebrew-translation.mp3"
+    },
+    {
+      "en": "without",
+      "tone": "be'lee",
+      "he": "בְּלִי",
+      "audio": "https://lang_src.s3.amazonaws.com/022_he201504.mp3"
+    }
+  ],
+  "conjunctions": [
+    {
+      "en": "even though; nevertheless; yet",
+      "tone": "beholzot",
+      "he": "בְּכָל זֹאת",
+      "audio": "http://www.yallahebrew.com/wp-content/uploads/2018/09/yet-in-hebrew-translation.mp3"
+    },
+    {
+      "en": "unless",
+      "tone": "ela im ken",
+      "he": "אֶלָא אִם כֵּן",
+      "audio": ""
+    },
+    {
+      "en": "or",
+      "tone": "o",
+      "he": "אוֹ",
+      "audio": "https://lang_src.s3.amazonaws.com/043_he201504.mp3"
+    }
+  ],
+  "interjections": [
+    {
+      "en": "come on; hurry up; let's go",
+      "tone": "yal'lah",
+      "he": "יַאלְלָה",
+      "audio": ""
+    },
+    {
+      "en": "what a coincidence; strange; wow",
+      "tone": "eize keta",
+      "he": "אֵיזֶה קָטַע",
+      "audio": ""
+    },
+    {
+      "en": "bottom line; to cut it short; straight to the point",
+      "tone": "tachles",
+      "he": "תַכְלֶס",
+      "audio": ""
+    }
+  ],
+  "adjectives": [
+    {
+      "en": "delicate; gentle",
+      "tone": "adin",
+      "he": "עָדִין",
+      "audio": ""
+    },
+    {
+      "en": "apropos",
+      "tone": "agav",
+      "he": "אַגַב",
+      "audio": ""
+    },
+    {
+      "en": "beautiful",
+      "tone": "(m) iafe; (f) iafa",
+      "he": "יָפֶה / יָפָה",
+      "audio": "https://lang_src.s3.amazonaws.com/h364_2013.mp3"
+    },
+    {
+      "en": "briefly; concisely",
+      "tone": "bekitzur",
+      "he": "בְּקִצּוּר",
+      "audio": ""
+    },
+    {
+      "en": "(m) this; that",
+      "tone": "ze",
+      "he": "זֶה",
+      "audio": "http://www.yallahebrew.com/wp-content/uploads/2018/09/this-hebrew-translation.mp3"
+    },
+    {
+      "en": "(f) this; that",
+      "tone": "zot",
+      "he": "זֹאת",
+      "audio": "http://www.yallahebrew.com/wp-content/uploads/2018/09/this-feminine-hebrew-translation.mp3"
+    },
+    {
+      "en": "it",
+      "tone": "ze",
+      "he": "זֶה",
+      "audio": "https://lang_src.s3.amazonaws.com/388_h.mp3"
+    },
+    {
+      "en": "thus",
+      "tone": "co",
+      "he": "כֹּה",
+      "audio": ""
+    },
+    {
+      "en": "really; for real; truly",
+      "tone": "",
+      "he": "אַשְׁכָּרָה",
+      "audio": ""
+    },
+    {
+      "en": "cold",
+      "tone": "kar",
+      "he": "קַר",
+      "audio": "https://lang_src.s3.amazonaws.com/553_h.mp3"
+    },
+    {
+      "en": "hot",
+      "tone": "ham",
+      "he": "חַם",
+      "audio": "https://lang_src.s3.amazonaws.com/551_h.mp3"
+    },
+    {
+      "en": "joyful; happy; jovial; jolly; cheerful; gay",
+      "tone": "aliz",
+      "he": "עַלִּיז",
+      "audio": ""
+    },
+    {
+      "en": "simple; plain; extended; stretched out",
+      "tone": "pashut",
+      "he": "פָּשׁוּט",
+      "audio": ""
+    },
+    {
+      "en": "wise",
+      "tone": "haham",
+      "he": "חָכָם",
+      "audio": ""
+    }
+  ],
+  "verbs": [
+    {
+      "en": "to learn; to study",
+      "tone": "lamad",
+      "he": "לָמַד",
+      "audio": "https://lang_src.s3.amazonaws.com/516_he201504.mp3"
+    },
+    {
+      "en": "to bake",
+      "tone": "leefot",
+      "he": "לֶאֱפוֹת",
+      "audio": "https://static.memrise.com/uploads/things/audio/101104276_160403_0649_12.mp3"
+    },
+    {
+      "en": "to eat",
+      "tone": "le'ekhol",
+      "he": "לֶאֱכֹל",
+      "audio": "https://static.memrise.com/uploads/things/audio/100663650_160330_0449_56.mp3"
+    },
+    {
+      "en": "to bless",
+      "tone": "berekh",
+      "he": "בֵּרֵך",
+      "audio": "https://lang_src.s3.amazonaws.com/573_he201504.mp3"
+    },
+    {
+      "en": "to taste",
+      "tone": "lit'om",
+      "he": "לִטְעֹם",
+      "audio": "https://static.memrise.com/uploads/things/audio/65756168_1438111873066.mp3"
+    },
+    {
+      "en": "to smoke",
+      "tone": "ishen",
+      "he": "עִשֵׁן",
+      "audio": "https://lang_src.s3.amazonaws.com/571_he201504.mp3"
+    },
+    {
+      "en": "to sweeten",
+      "tone": "l'ham'tiyk",
+      "he": "לְהַמְתִּיק",
+      "audio": "https://static.memrise.com/uploads/things/audio/65756281_1438111957476.mp3"
+    },
+    {
+      "en": "to speak",
+      "tone": "diber",
+      "he": "דִּבֵּר",
+      "audio": "https://lang_src.s3.amazonaws.com/570_he201504.mp3"
+    },
+    {
+      "en": "to be late",
+      "tone": "eher",
+      "he": "אֵחֵר",
+      "audio": "https://lang_src.s3.amazonaws.com/572_he201504.mp3"
+    },
+    {
+      "en": "to close",
+      "tone": "sagar",
+      "he": "סָגַר",
+      "audio": "https://lang_src.s3.amazonaws.com/515_he201504.mp3"
+    },
+    {
+      "en": "to finish",
+      "tone": "gamar",
+      "he": "גָּמַר",
+      "audio": "https://lang_src.s3.amazonaws.com/514_he201504.mp3"
+    },
+    {
+      "en": "to write",
+      "tone": "katav",
+      "he": "כָּתַב",
+      "audio": "https://lang_src.s3.amazonaws.com/513_he201504.mp3"
+    },
+    {
+      "en": "to look after; to guard; to keep",
+      "tone": "shamar",
+      "he": "שָׁמַר",
+      "audio": "https://lang_src.s3.amazonaws.com/512_he201504.mp3"
+    },
+    {
+      "en": "to depart; to leave",
+      "tone": "laazov",
+      "he": "לַעֲזוֹב",
+      "audio": "https://lang_src.s3.amazonaws.com/h670_2013.mp3"
+    },
+    {
+      "en": "to arrive",
+      "tone": "leagia",
+      "he": "לְהַגִיע",
+      "audio": "https://lang_src.s3.amazonaws.com/h671_2013.mp3"
+    },
+    {
+      "en": "to get on board; to board; to cost",
+      "tone": "laalot",
+      "he": "לַעֲלוֹת",
+      "audio": "https://lang_src.s3.amazonaws.com/h672_2013.mp3"
+    }
+  ],
+  "adverbs": [
+    {
+      "en": "Yes",
+      "tone": "ken",
+      "he": "כֵּן",
+      "audio": "http://www.yallahebrew.com/wp-content/uploads/2018/09/how-to-say-yes-in-hebrew.mp3"
+    },
+    {
+      "en": "No",
+      "tone": "lo",
+      "he": "לֹא",
+      "audio": "https://lang_src.s3.amazonaws.com/56_h.mp3"
+    },
+    {
+      "en": "good",
+      "tone": "tov",
+      "he": "טוֹב",
+      "audio": "https://lang_src.s3.amazonaws.com/37_h.mp3"
+    },
+    {
+      "en": "before",
+      "tone": "lifnei",
+      "he": "לִפְנֵי",
+      "audio": "https://lang_src.s3.amazonaws.com/648_h.mp3"
+    },
+    {
+      "en": "after",
+      "tone": "aharei",
+      "he": "אַחֲרֵי",
+      "audio": "https://lang_src.s3.amazonaws.com/020_he201504.mp3"
+    },
+    {
+      "en": "there is",
+      "tone": "iesh",
+      "he": "יֵשׁ",
+      "audio": ""
+    },
+    {
+      "en": "there is no",
+      "tone": "ein",
+      "he": "אֵין",
+      "audio": ""
+    },
+    {
+      "en": "where",
+      "tone": "eifo",
+      "he": "אֵיפֹה",
+      "audio": ""
+    },
+    {
+      "en": "whither",
+      "tone": "lean",
+      "he": "לְאָן",
+      "audio": ""
+    },
+    {
+      "en": "why",
+      "tone": "lama",
+      "he": "לָמָה",
+      "audio": ""
+    },
+    {
+      "en": "when",
+      "tone": "matai",
+      "he": "מָתַי",
+      "audio": "https://lang_src.s3.amazonaws.com/379_h.mp3"
+    },
+    {
+      "en": "how",
+      "tone": "eih",
+      "he": "אֵיךְ",
+      "audio": "https://lang_src.s3.amazonaws.com/487_he201504.mp3"
+    },
+    {
+      "en": "how much",
+      "tone": "kama",
+      "he": "כַּמָּה",
+      "audio": ""
+    },
+    {
+      "en": "maybe",
+      "tone": "ulay",
+      "he": "אוּלַי",
+      "audio": "https://static.memrise.com/uploads/things/audio/90095663_160329_0236_31.mp3"
+    }
+  ],
+  "animals": [
+    {
+      "en": "dog",
+      "tone": "kelev",
+      "he": "כֶּלֶב",
+      "audio": "http://www.yallahebrew.com/wp-content/uploads/2018/09/dog-in-hebrew-translation.mp3"
+    },
+    {
+      "en": "cat",
+      "tone": "chatul",
+      "he": "חָתוּל",
+      "audio": "http://www.yallahebrew.com/wp-content/uploads/2018/09/Cat-in-hebrew-translation.mp3"
+    },
+    {
+      "en": "chicken",
+      "tone": "of",
+      "he": "עוֹף",
+      "audio": ""
+    },
+    {
+      "en": "fish",
+      "tone": "dag",
+      "he": "דָג",
+      "audio": "http://www.yallahebrew.com/wp-content/uploads/2018/10/fish-in-hebrew-translation.mp3"
+    },
+    {
+      "en": "bear",
+      "tone": "dov",
+      "he": "דֹב",
+      "audio": ""
+    },
+    {
+      "en": "bird",
+      "tone": "tsipor",
+      "he": "‬צִפּוֹר",
+      "audio": "http://www.yallahebrew.com/wp-content/uploads/2018/10/bird-in-hebrew-translation.mp3"
+    },
+    {
+      "en": "bee",
+      "tone": "d'vorah",
+      "he": "דְּבוֹרָה",
+      "audio": "https://static.memrise.com/uploads/things/audio/62465819_1437628462675.mp3"
+    },
+    {
+      "en": "honey bee",
+      "tone": "d'vorat d'vash",
+      "he": "דְבוֹרָת דְבַשׁ",
+      "audio": "https://static.memrise.com/uploads/things/audio/65696913_1439069596667.mp3"
+    },
+    {
+      "en": "bees",
+      "tone": "d'voriym",
+      "he": "דְּבוֹרִים",
+      "audio": "https://static.memrise.com/uploads/things/audio/65490856_1437507156307.mp3"
+    },
+    {
+      "en": "cow",
+      "tone": "parah",
+      "he": "פָּרָה",
+      "audio": ""
+    },
+    {
+      "en": "pig",
+      "tone": "chaziyr",
+      "he": "חֲזִיר",
+      "audio": ""
+    },
+    {
+      "en": "dove; pigeon",
+      "tone": "yonah",
+      "he": "יוֹנָה",
+      "audio": "http://www.yallahebrew.com/wp-content/uploads/2018/10/dove-in-hebrew-translation.mp3"
+    },
+    {
+      "en": "dolphin",
+      "tone": "dol'fiyn",
+      "he": "דּוֹלְפִין",
+      "audio": ""
+    },
+    {
+      "en": "mouse",
+      "tone": "akhbar",
+      "he": "עַכְבָּר",
+      "audio": ""
+    },
+    {
+      "en": "horse",
+      "tone": "sus",
+      "he": "סוּס",
+      "audio": ""
+    },
+    {
+      "en": "camel",
+      "tone": "gamal",
+      "he": "גָּמָל",
+      "audio": ""
+    },
+    {
+      "en": "donkey",
+      "tone": "chamor",
+      "he": "חֲמוֹר",
+      "audio": ""
+    },
+    {
+      "en": "giraffe",
+      "tone": "girafa",
+      "he": "ג'ִירָפָה",
+      "audio": ""
+    },
+    {
+      "en": "kangaroo",
+      "tone": "kenguru",
+      "he": "קֶנגוּרוּ",
+      "audio": ""
+    },
+    {
+      "en": "llama",
+      "tone": "laamah",
+      "he": "לָאָמָה",
+      "audio": ""
+    },
+    {
+      "en": "zebra",
+      "tone": "zeb'rah",
+      "he": "זֶבְּרָה",
+      "audio": ""
+    },
+    {
+      "en": "armadillo",
+      "tone": "armadil",
+      "he": "אַרמָדִיל",
+      "audio": ""
+    },
+    {
+      "en": "gorilla",
+      "tone": "gorila",
+      "he": "גּוֹרִילָה",
+      "audio": ""
+    },
+    {
+      "en": "panda",
+      "tone": "pan'dah",
+      "he": "פַּנְדָּה",
+      "audio": ""
+    },
+    {
+      "en": "panther",
+      "tone": "pan'ter",
+      "he": "פַּנְתֵּר",
+      "audio": ""
+    },
+    {
+      "en": "puma",
+      "tone": "puma",
+      "he": "פּוּמָה",
+      "audio": ""
+    },
+    {
+      "en": "jaguar",
+      "tone": "yaguar",
+      "he": "יָגוּאָר",
+      "audio": ""
+    },
+    {
+      "en": "lemur",
+      "tone": "lemur",
+      "he": "לֵמוּר",
+      "audio": ""
+    },
+    {
+      "en": "marmoset",
+      "tone": "marmust",
+      "he": "מרמוסט",
+      "audio": ""
+    },
+    {
+      "en": "chinchilla",
+      "tone": "chinchila",
+      "he": "צ'ינצ'ילה",
+      "audio": ""
+    },
+    {
+      "en": "chimpanzee",
+      "tone": "shimpanza",
+      "he": "שִׁימְפַּנְזֶה",
+      "audio": ""
+    },
+    {
+      "en": "penguin",
+      "tone": "piyn'g'viyn",
+      "he": "פִּינְגְּוִין",
+      "audio": ""
+    },
+    {
+      "en": "flamingo",
+      "tone": "flamingo",
+      "he": "פְלָמִינְגּוֹ",
+      "audio": ""
+    },
+    {
+      "en": "cockatiel",
+      "tone": "kok'teyl",
+      "he": "קוֹקְטֵיל",
+      "audio": ""
+    },
+    {
+      "en": "cockatoo",
+      "tone": "kakadu",
+      "he": "קָקָדוּ",
+      "audio": ""
+    },
+    {
+      "en": "iguana",
+      "tone": "iguana",
+      "he": "איגואנה",
+      "audio": ""
+    },
+    {
+      "en": "koi",
+      "tone": "koi",
+      "he": "קוי",
+      "audio": ""
+    },
+    {
+      "en": "salamander",
+      "tone": "salamandra",
+      "he": "סָלָמַנְדְּרָה",
+      "audio": ""
+    },
+    {
+      "en": "wing",
+      "tone": "kanaf",
+      "he": "כָּנָף",
+      "audio": ""
+    },
+    {
+      "en": "animal",
+      "tone": "baal chayiym",
+      "he": "בַּעַל חַיִּים",
+      "audio": ""
+    }
+  ],
+  "fruits": [
+    {
+      "en": "fruit",
+      "tone": "p'riy",
+      "he": "פְּרִי",
+      "audio": "https://static.memrise.com/uploads/things/audio/100663701_160330_0450_09.mp3"
+    },
+    {
+      "en": "pollen; powder",
+      "tone": "av'kah",
+      "he": "אֲבָקָה",
+      "audio": "https://static.memrise.com/uploads/things/audio/65491373_1437507240467.mp3"
+    },
+    {
+      "en": "orange",
+      "tone": "tapuz",
+      "he": "תַּפּוּז",
+      "audio": "https://static.memrise.com/uploads/things/audio/61983301_1435761273898.mp3"
+    },
+    {
+      "en": "apple",
+      "tone": "tapuah",
+      "he": "תַפּוּחַ",
+      "audio": "https://static.memrise.com/uploads/things/audio/61983284_1435761156849.mp3"
+    },
+    {
+      "en": "pineapple",
+      "tone": "ananas",
+      "he": "אָנָנָס",
+      "audio": "https://static.memrise.com/uploads/things/audio/100663788_160330_0451_18.mp3"
+    },
+    {
+      "en": "pear",
+      "tone": "agas",
+      "he": "אַגָס",
+      "audio": "https://milog.co.il/tts/sound/misc/%D7%90%D6%B7%D7%92%D6%BC%D6%B8%D7%A1.mp3"
+    },
+    {
+      "en": "prickly pear",
+      "tone": "tzabar",
+      "he": "צָבָּר",
+      "audio": "https://milog.co.il/tts/sound/misc/%D7%A6%D6%B7%D7%91%D6%BC%D6%B8%D7%A8.mp3"
+    },
+    {
+      "en": "peach",
+      "tone": "afarsek",
+      "he": "אֲפַרְסֵק",
+      "audio": "https://static.memrise.com/uploads/things/audio/61983432_1435762437892.mp3"
+    },
+    {
+      "en": "pomegranate",
+      "tone": "rimon",
+      "he": "רִמּוֹן",
+      "audio": "https://static.memrise.com/uploads/things/audio/61984794_1437196146094.mp3"
+    },
+    {
+      "en": "banana",
+      "tone": "banana",
+      "he": "בָּנָנָה",
+      "audio": "https://static.memrise.com/uploads/things/audio/100663732_160330_0450_50.mp3"
+    },
+    {
+      "en": "avocado",
+      "tone": "avocado",
+      "he": "אָבוֹקָדוֹ",
+      "audio": "https://static.memrise.com/uploads/things/audio/101104312_160403_0649_34.mp3"
+    },
+    {
+      "en": "citrus",
+      "tone": "hadar",
+      "he": "הָדָר",
+      "audio": "https://static.memrise.com/uploads/things/audio/65824587_1438113218563.mp3"
+    },
+    {
+      "en": "lemon",
+      "tone": "liymon",
+      "he": "לִימוֹן",
+      "audio": "https://static.memrise.com/uploads/things/audio/100663731_160330_0450_48.mp3"
+    },
+    {
+      "en": "watermelon",
+      "tone": "avatiah",
+      "he": "אֲבַטִּיחַ",
+      "audio": "https://static.memrise.com/uploads/things/audio/101104288_160403_0649_22.mp3"
+    },
+    {
+      "en": "pomegranate",
+      "tone": "rimon",
+      "he": "רִמוֹן",
+      "audio": "https://milog.co.il/tts/sound/misc/%D7%A8%D6%B4%D7%9E%D6%BC%D7%95%D6%B9%D7%9F.mp3"
+    },
+    {
+      "en": "cherry",
+      "tone": "duvdevan",
+      "he": "דֻּבְדְּבָן",
+      "audio": "https://static.memrise.com/uploads/things/audio/101104325_160403_0649_41.mp3"
+    },
+    {
+      "en": "blueberry",
+      "tone": "ukh'maniyt",
+      "he": "אוּכמָנִית",
+      "audio": "https://static.memrise.com/uploads/things/audio/61983626_1435762974648.mp3"
+    },
+    {
+      "en": "berry; strawberry",
+      "tone": "tut",
+      "he": "תּוּת",
+      "audio": "https://static.memrise.com/uploads/things/audio/100663717_160330_0450_20.mp3"
+    },
+    {
+      "en": "cranberry",
+      "tone": "chamutziyt",
+      "he": "חֲמוּצִית",
+      "audio": ""
+    },
+    {
+      "en": "grape",
+      "tone": "enav",
+      "he": "עַנָב",
+      "audio": "https://static.memrise.com/uploads/things/audio/101104309_160403_0649_32.mp3"
+    },
+    {
+      "en": "grapefruit",
+      "tone": "esh'koliyt",
+      "he": "אֶשׁכּוֹלִית",
+      "audio": "https://static.memrise.com/uploads/things/audio/61983559_1435762578381.mp3"
+    },
+    {
+      "en": "mango",
+      "tone": "mango",
+      "he": "מַנְגּוֹ",
+      "audio": "https://static.memrise.com/uploads/things/audio/101104345_160403_0649_48.mp3"
+    },
+    {
+      "en": "plum",
+      "tone": "sh'ziyf",
+      "he": "שְׁזִיף",
+      "audio": "https://static.memrise.com/uploads/things/audio/61983615_1437269546821.mp3"
+    },
+    {
+      "en": "peanut",
+      "tone": "boten",
+      "he": "בֹּטֶן",
+      "audio": "https://static.memrise.com/uploads/things/audio/101104295_160403_0649_24.mp3"
+    },
+    {
+      "en": "nut; walnut",
+      "tone": "egoz",
+      "he": "אֱגוֹז",
+      "audio": "https://static.memrise.com/uploads/things/audio/85938444_1455546160425.mp3"
+    }
+  ],
+  "vegetables": [
+    {
+      "en": "vegetable",
+      "tone": "ierek",
+      "he": "יֶרֶק",
+      "audio": "https://static.memrise.com/uploads/things/audio/101104205_160403_0648_48.mp3"
+    },
+    {
+      "en": "cabbage",
+      "tone": "k'ruv",
+      "he": "כְּרוּב",
+      "audio": [
+        "https://static.memrise.com/uploads/things/audio/61983292_1435761200793.mp3",
+        "https://static.memrise.com/uploads/things/audio/61983292_1437196478881.mp3"
+      ]
+    },
+    {
+      "en": "cauliflower",
+      "tone": "k'ruviyt",
+      "he": "כְּרוּבִית",
+      "audio": "https://static.memrise.com/uploads/things/audio/61983632_1435763044870.mp3"
+    },
+    {
+      "en": "broccoli",
+      "tone": "b'rokoliy",
+      "he": "בְּרוֹקוֹלִי",
+      "audio": "https://static.memrise.com/uploads/things/audio/61983640_1435763087173.mp3"
+    },
+    {
+      "en": "eggplant",
+      "tone": "chatziyl",
+      "he": "חֲצִיל",
+      "audio": "https://static.memrise.com/uploads/things/audio/61990649_1462148979593.mp3"
+    },
+    {
+      "en": "lettuce",
+      "tone": "chasah",
+      "he": "חַסָּה",
+      "audio": "https://static.memrise.com/uploads/things/audio/61983337_1435761349957.mp3"
+    },
+    {
+      "en": "potato",
+      "tone": "tapuach adama",
+      "he": "תַּפּוּחַ אֲדָמָה",
+      "audio": "https://static.memrise.com/uploads/things/audio/101104316_160403_0649_37.mp3"
+    },
+    {
+      "en": "olive",
+      "tone": "zait",
+      "he": "זַיִת",
+      "audio": "https://static.memrise.com/uploads/things/audio/100663791_160330_0451_21.mp3"
+    },
+    {
+      "en": "tomato",
+      "tone": "agvania",
+      "he": "עַגְבָנִיָּה",
+      "audio": "https://static.memrise.com/uploads/things/audio/100663722_160330_0450_31.mp3"
+    },
+    {
+      "en": "salad",
+      "tone": "salat",
+      "he": "סָלָט",
+      "audio": "https://static.memrise.com/uploads/things/audio/100663776_160330_0451_07.mp3"
+    },
+    {
+      "en": "spinach",
+      "tone": "tered",
+      "he": "תֶרֶד",
+      "audio": "https://milog.co.il/tts/sound/misc/%D7%AA%D6%BC%D6%B6%D7%A8%D6%B6%D7%93.mp3"
+    },
+    {
+      "en": "mushroom",
+      "tone": "pitria",
+      "he": "פִּטְרִיָּה",
+      "audio": "https://static.memrise.com/uploads/things/audio/100663784_160330_0451_12.mp3"
+    },
+    {
+      "en": "pepper",
+      "tone": "pilpel",
+      "he": "פִּלְפֵּל",
+      "audio": "https://static.memrise.com/uploads/things/audio/101104213_160403_0648_51.mp3"
+    },
+    {
+      "en": "cucumber",
+      "tone": "melafefon",
+      "he": "מְלָפְפוֹן",
+      "audio": "https://static.memrise.com/uploads/things/audio/101104268_160403_0649_09.mp3"
+    },
+    {
+      "en": "onion",
+      "tone": "batzal",
+      "he": "בָּצָל",
+      "audio": "https://static.memrise.com/uploads/things/audio/101104297_160403_0649_26.mp3"
+    },
+    {
+      "en": "garlic",
+      "tone": "shum",
+      "he": "שׁוּם",
+      "audio": "https://static.memrise.com/uploads/things/audio/101104378_160403_0649_52.mp3"
+    },
+    {
+      "en": "carrot",
+      "tone": "gezer",
+      "he": "גֶּזֶר",
+      "audio": "https://static.memrise.com/uploads/things/audio/101104278_160403_0649_15.mp3"
+    },
+    {
+      "en": "beet",
+      "tone": "selek",
+      "he": "סֶלֶק",
+      "audio": "https://static.memrise.com/uploads/things/audio/61984791_1435763142593.mp3"
+    },
+    {
+      "en": "dill",
+      "tone": "shamir",
+      "he": "שָׁמִיר",
+      "audio": "https://milog.co.il/tts/sound/misc/%D7%A9%D7%9E%D6%B4%D7%99%D7%A8.mp3"
+    },
+    {
+      "en": "mint",
+      "tone": "nana",
+      "he": "נַענַע",
+      "audio": "https://static.memrise.com/uploads/things/audio/85938343_1455546146159.mp3"
+    },
+    {
+      "en": "basil",
+      "tone": "basilicum",
+      "he": "בָּזִילִיקוּם",
+      "audio": "https://static.memrise.com/uploads/things/audio/85938425_1455546155657.mp3"
+    }
+  ],
+  "food": [
+    {
+      "en": "food",
+      "tone": "ohel",
+      "he": "אֹכֶל",
+      "audio": "https://static.memrise.com/uploads/things/audio/63293014_1437419732869.mp3"
+    },
+    {
+      "en": "recipe",
+      "tone": "matkon",
+      "he": "מַתְכּוֹן",
+      "audio": "https://static.memrise.com/uploads/things/audio/101104223_160403_0648_54.mp3"
+    },
+    {
+      "en": "ingredients",
+      "tone": "mitzrahim",
+      "he": "מִצְּרָכִים",
+      "audio": "https://static.memrise.com/uploads/things/audio/101104394_160403_0650_02.mp3"
+    },
+    {
+      "en": "menu",
+      "tone": "tafrit",
+      "he": "תַּפְרִיט",
+      "audio": "https://static.memrise.com/uploads/things/audio/101104195_160403_0648_43.mp3"
+    },
+    {
+      "en": "meal",
+      "tone": "arucha",
+      "he": "אֲרוּחָה",
+      "audio": "https://static.memrise.com/uploads/things/audio/101103848_160403_0648_17.mp3"
+    },
+    {
+      "en": "feast; banquet",
+      "tone": "s'udah",
+      "he": "סְעוּדָה",
+      "audio": "https://static.memrise.com/uploads/things/audio/66049934_1455939005807.mp3"
+    },
+    {
+      "en": "dessert",
+      "tone": "kinuah",
+      "he": "קִנּוּחַ",
+      "audio": "https://lang_src.s3.amazonaws.com/507_h.mp3"
+    },
+    {
+      "en": "lunch",
+      "tone": "aruchat tzaharayim",
+      "he": "אֲרוּחַת צָהֳרַיִם",
+      "audio": "https://static.memrise.com/uploads/things/audio/100663696_160330_0450_02.mp3"
+    },
+    {
+      "en": "breakfast",
+      "tone": "aruchat boker",
+      "he": "אֲרוּחַת בֹּקֶר",
+      "audio": "https://static.memrise.com/uploads/things/audio/100663700_160330_0450_04.mp3"
+    },
+    {
+      "en": "supper; dinner",
+      "tone": "aruchat erev",
+      "he": "אֲרוּחַת עֶרֶב",
+      "audio": "https://static.memrise.com/uploads/things/audio/100663764_160330_0450_06.mp3"
+    },
+    {
+      "en": "vegetarian",
+      "tone": "tzim'choniy",
+      "he": "צִמְחוֹנִי",
+      "audio": "https://static.memrise.com/uploads/things/audio/101103852_160403_0648_20.mp3"
+    },
+    {
+      "en": "flour",
+      "tone": "kemach",
+      "he": "קֶמַח",
+      "audio": "https://static.memrise.com/uploads/things/audio/101104398_160403_0650_04.mp3"
+    },
+    {
+      "en": "unleavened bread",
+      "tone": "matza",
+      "he": "מַצָה",
+      "audio": ""
+    },
+    {
+      "en": "bread",
+      "tone": "lechem",
+      "he": "לֶחֶם",
+      "audio": "http://www.yallahebrew.com/wp-content/uploads/2018/10/bread-in-hebrew-translation.mp3"
+    },
+    {
+      "en": "pasta",
+      "tone": "pasta",
+      "he": "פסטה",
+      "audio": "https://static.memrise.com/uploads/things/audio/100663703_160330_0450_11.mp3"
+    },
+    {
+      "en": "pizza",
+      "tone": "pitza",
+      "he": "פִּיצָה",
+      "audio": "https://static.memrise.com/uploads/things/audio/100663785_160330_0451_16.mp3"
+    },
+    {
+      "en": "hamburger",
+      "tone": "hamburger",
+      "he": "הַמְבּוּרְגֶּר",
+      "audio": ""
+    },
+    {
+      "en": "sandwich",
+      "tone": "kariykh'",
+      "he": "כָּרִיךְ",
+      "audio": "https://static.memrise.com/uploads/things/audio/100663767_160330_0450_53.mp3"
+    },
+    {
+      "en": "meat",
+      "tone": "basar",
+      "he": "בָּשָׂר",
+      "audio": [
+        "https://static.memrise.com/uploads/things/audio/100663720_160330_0450_29.mp3",
+        "http://www.yallahebrew.com/wp-content/uploads/2018/10/meat.mp3"
+      ]
+    },
+    {
+      "en": "beef; cattle",
+      "tone": "bakar",
+      "he": "בָּקָר",
+      "audio": "https://static.memrise.com/uploads/things/audio/100663772_160330_0451_04.mp3"
+    },
+    {
+      "en": "egg",
+      "tone": "beytsa",
+      "he": "בֵּיצָה",
+      "audio": "https://static.memrise.com/uploads/things/audio/100663664_160330_0450_00.mp3"
+    },
+    {
+      "en": "omlette",
+      "tone": "havita",
+      "he": "חֲבִיתָה",
+      "audio": ""
+    },
+    {
+      "en": "chips",
+      "tone": "tsips",
+      "he": "צ'יפס",
+      "audio": ""
+    },
+    {
+      "en": "grocery store",
+      "tone": "makolet",
+      "he": "מַכֹּלֶת",
+      "audio": ""
+    },
+    {
+      "en": "soup",
+      "tone": "marak",
+      "he": "מָרָק",
+      "audio": "https://static.memrise.com/uploads/things/audio/100663724_160330_0450_33.mp3"
+    },
+    {
+      "en": "sauce",
+      "tone": "rotev",
+      "he": "רוֹטֶב",
+      "audio": "https://static.memrise.com/uploads/things/audio/101104201_160403_0648_46.mp3"
+    },
+    {
+      "en": "oil",
+      "tone": "shemen",
+      "he": "שֶׁמֶן",
+      "audio": "https://static.memrise.com/uploads/things/audio/100663730_160330_0450_46.mp3"
+    },
+    {
+      "en": "vinegar",
+      "tone": "hometz",
+      "he": "חוֹמֶץ",
+      "audio": ""
+    },
+    {
+      "en": "drink; beverage",
+      "tone": "mashke",
+      "he": "מַשׁקֶה",
+      "audio": "https://static.memrise.com/uploads/things/audio/101104321_160403_0649_38.mp3"
+    },
+    {
+      "en": "juice",
+      "tone": "mits",
+      "he": "מִיץ",
+      "audio": ""
+    },
+    {
+      "en": "lemonade",
+      "tone": "liymonada",
+      "he": "לִימוֹנָדָה",
+      "audio": ""
+    },
+    {
+      "en": "water",
+      "tone": "maim",
+      "he": "מַיִם",
+      "audio": "http://www.yallahebrew.com/wp-content/uploads/2018/10/water-in-hebrew-translation.mp3"
+    },
+    {
+      "en": "ice",
+      "tone": "kerah",
+      "he": "קֶרַח",
+      "audio": ""
+    },
+    {
+      "en": "ice cream",
+      "tone": "glida",
+      "he": "גְּלִידָה",
+      "audio": "https://static.memrise.com/uploads/things/audio/101104334_160403_0649_46.mp3"
+    },
+    {
+      "en": "wine",
+      "tone": "iain",
+      "he": "יַיִן",
+      "audio": ""
+    },
+    {
+      "en": "beer",
+      "tone": "bira",
+      "he": "בִּירָה",
+      "audio": "https://static.memrise.com/uploads/things/audio/100663715_160330_0450_19.mp3"
+    },
+    {
+      "en": "milk",
+      "tone": "halav",
+      "he": "חָלָב",
+      "audio": ""
+    },
+    {
+      "en": "butter",
+      "tone": "hema",
+      "he": "חֶמְאָה",
+      "audio": "https://static.memrise.com/uploads/things/audio/100663781_160330_0451_10.mp3"
+    },
+    {
+      "en": "cheese",
+      "tone": "gvina",
+      "he": "גְּבִינָה",
+      "audio": "https://static.memrise.com/uploads/things/audio/100663719_160330_0450_24.mp3"
+    },
+    {
+      "en": "honey",
+      "tone": "d'vash",
+      "he": "דְּבַשׁ",
+      "audio": "https://static.memrise.com/uploads/things/audio/101104226_160403_0648_59.mp3"
+    },
+    {
+      "en": "sugar",
+      "tone": "sukar",
+      "he": "סֻכָּר",
+      "audio": "https://static.memrise.com/uploads/things/audio/100663706_160330_0450_12.mp3"
+    },
+    {
+      "en": "candy",
+      "tone": "sukaria",
+      "he": "סוּכָּרִיָה",
+      "audio": ""
+    },
+    {
+      "en": "chocolate",
+      "tone": "shokolad",
+      "he": "שׁוֹקוֹלָד",
+      "audio": "https://static.memrise.com/uploads/things/audio/100663790_160330_0451_19.mp3"
+    },
+    {
+      "en": "cookie",
+      "tone": "ugiya",
+      "he": "עוּגִיָּה",
+      "audio": "https://static.memrise.com/uploads/things/audio/101104285_160403_0649_21.mp3"
+    },
+    {
+      "en": "gum",
+      "tone": "mastik",
+      "he": "מַסְטִיק",
+      "audio": "https://static.memrise.com/uploads/things/audio/101104328_160403_0649_43.mp3"
+    },
+    {
+      "en": "jam",
+      "tone": "riba",
+      "he": "רִבָּה",
+      "audio": "https://static.memrise.com/uploads/things/audio/101104299_160403_0649_28.mp3"
+    },
+    {
+      "en": "paste",
+      "tone": "mimrah",
+      "he": "מִמרָח",
+      "audio": ""
+    },
+    {
+      "en": "coffee",
+      "tone": "kafe",
+      "he": "קָפֶה",
+      "audio": "https://static.memrise.com/uploads/things/audio/100663663_160330_0449_57.mp3"
+    },
+    {
+      "en": "tea",
+      "tone": "te",
+      "he": "תֵּה",
+      "audio": "https://static.memrise.com/uploads/things/audio/101103856_160403_0648_21.mp3"
+    },
+    {
+      "en": "salt",
+      "tone": "melach",
+      "he": "מֶלַח",
+      "audio": "https://static.memrise.com/uploads/things/audio/100663769_160330_0450_55.mp3"
+    },
+    {
+      "en": "restaurant",
+      "tone": "misaada",
+      "he": "מִסְעָדָה",
+      "audio": "https://static.memrise.com/uploads/things/audio/101104211_160403_0648_51.mp3"
+    },
+    {
+      "en": "smell",
+      "tone": "reah",
+      "he": "רֵיחַ",
+      "audio": "https://static.memrise.com/uploads/things/audio/101104384_160403_0649_54.mp3"
+    }
+  ],
+  "tastes": [
+    {
+      "en": "flavor; taste",
+      "tone": "taam",
+      "he": "טַעַם",
+      "audio": "https://static.memrise.com/uploads/things/audio/101104385_160403_0649_56.mp3"
+    },
+    {
+      "en": "sweet",
+      "tone": "matok",
+      "he": "מָתוֹק",
+      "audio": [
+        "https://static.memrise.com/uploads/things/audio/65756052_1437105829871.mp3",
+        "https://static.memrise.com/uploads/things/audio/65756052_1438111546470.mp3"
+      ]
+    },
+    {
+      "en": "spicy; hot",
+      "tone": "chariyf",
+      "he": "חָרִיף",
+      "audio": "https://static.memrise.com/uploads/things/audio/65756065_1437106028369.mp3"
+    },
+    {
+      "en": "bland",
+      "tone": "tafel",
+      "he": "תָּפֵל",
+      "audio": "https://static.memrise.com/uploads/things/audio/65756077_1437106048607.mp3"
+    },
+    {
+      "en": "sour",
+      "tone": "chamutz",
+      "he": "חָמוּץ",
+      "audio": "https://static.memrise.com/uploads/things/audio/65756085_1437106063290.mp3"
+    },
+    {
+      "en": "acid",
+      "tone": "chum'tzah",
+      "he": "חֻמְצָה",
+      "audio": "https://static.memrise.com/uploads/things/audio/65756103_1438111675632.mp3"
+    },
+    {
+      "en": "vinegar",
+      "tone": "chometz",
+      "he": "חֹמֶץ",
+      "audio": "https://static.memrise.com/uploads/things/audio/65756233_1438111938845.mp3"
+    },
+    {
+      "en": "bitter",
+      "tone": "mar",
+      "he": "מַר",
+      "audio": "https://static.memrise.com/uploads/things/audio/65756057_1437105843853.mp3"
+    },
+    {
+      "en": "maror; bitter herbs",
+      "tone": "maror",
+      "he": "מָרוֹר",
+      "audio": "https://static.memrise.com/uploads/things/audio/65756093_1438111654345.mp3"
+    },
+    {
+      "en": "salty",
+      "tone": "maluach",
+      "he": "מָלוּחַ",
+      "audio": "https://static.memrise.com/uploads/things/audio/65756122_1438111700247.mp3"
+    },
+    {
+      "en": "tasty; delicious",
+      "tone": "taiym",
+      "he": "טָעִים",
+      "audio": "https://static.memrise.com/uploads/things/audio/65756162_1438111771349.mp3"
+    }
+  ],
+  "kitchen": [
+    {
+      "en": "kitchen",
+      "tone": "mitbach",
+      "he": "מִטְבָּח",
+      "audio": "https://static.memrise.com/uploads/things/audio/101104265_160403_0649_05.mp3"
+    },
+    {
+      "en": "table",
+      "tone": "shuljan",
+      "he": "שֻׁלְחָן",
+      "audio": "https://lang_src.s3.amazonaws.com/269_he201504.mp3"
+    },
+    {
+      "en": "tablecloth",
+      "tone": "mapa",
+      "he": "מַפָּה",
+      "audio": ""
+    },
+    {
+      "en": "chair",
+      "tone": "kise",
+      "he": "כִּסֵּא",
+      "audio": "https://lang_src.s3.amazonaws.com/267_he201504.mp3"
+    },
+    {
+      "en": "napkin",
+      "tone": "mapit",
+      "he": "מַפִּית",
+      "audio": "https://static.memrise.com/uploads/things/audio/101104079_160403_0648_30.mp3"
+    },
+    {
+      "en": "plate",
+      "tone": "tzalachat",
+      "he": "צַלַּחַת",
+      "audio": "https://lang_src.s3.amazonaws.com/360_he201504.mp3"
+    },
+    {
+      "en": "bowl",
+      "tone": "qe'ara",
+      "he": "קְעָרָה",
+      "audio": [
+        "https://static.memrise.com/uploads/things/audio/101104084_160403_0648_35.mp3",
+        "https://lang_src.s3.amazonaws.com/361_he201504.mp3"
+      ]
+    },
+    {
+      "en": "spoon",
+      "tone": "kaf",
+      "he": "כַּף",
+      "audio": "https://static.memrise.com/uploads/things/audio/101104081_160403_0648_31.mp3"
+    },
+    {
+      "en": "teaspoon",
+      "tone": "kapit",
+      "he": "כַּפִּית",
+      "audio": "https://static.memrise.com/uploads/things/audio/101104186_160403_0648_41.mp3"
+    },
+    {
+      "en": "fork",
+      "tone": "maz'leg",
+      "he": "מַזְלֵג",
+      "audio": "https://static.memrise.com/uploads/things/audio/101103961_160403_0648_24.mp3"
+    },
+    {
+      "en": "knife",
+      "tone": "sakin",
+      "he": "סַכִּין",
+      "audio": "https://static.memrise.com/uploads/things/audio/101103978_160403_0648_27.mp3"
+    },
+    {
+      "en": "scissors",
+      "tone": "misparaim",
+      "he": "מִסְפָּרַיִם",
+      "audio": ""
+    },
+    {
+      "en": "cup",
+      "tone": "sefel",
+      "he": "סֶפֶל",
+      "audio": "https://lang_src.s3.amazonaws.com/362_he201504.mp3"
+    },
+    {
+      "en": "glass",
+      "tone": "kos",
+      "he": "כּוֹס",
+      "audio": [
+        "https://static.memrise.com/uploads/things/audio/101104063_160403_0648_28.mp3",
+        "https://lang_src.s3.amazonaws.com/363_he201504.mp3"
+      ]
+    },
+    {
+      "en": "pot",
+      "tone": "sir",
+      "he": "סִיר",
+      "audio": "https://static.memrise.com/uploads/things/audio/101104389_160403_0649_59.mp3"
+    },
+    {
+      "en": "pan",
+      "tone": "mahavat",
+      "he": "מַחֲבַת",
+      "audio": ""
+    },
+    {
+      "en": "bottle",
+      "tone": "baqbuq",
+      "he": "בַּקְבּוּק",
+      "audio": "https://static.memrise.com/uploads/things/audio/100663773_160330_0451_05.mp3"
+    },
+    {
+      "en": "kettle",
+      "tone": "kumkum",
+      "he": "קוּמְקוּם",
+      "audio": ""
+    },
+    {
+      "en": "refrigerator",
+      "tone": "mekarer",
+      "he": "מְקָרֵר",
+      "audio": "https://lang_src.s3.amazonaws.com/352_he201504.mp3"
+    },
+    {
+      "en": "oven",
+      "tone": "tanur",
+      "he": "תַּנּוּר",
+      "audio": "https://lang_src.s3.amazonaws.com/358_he201504.mp3"
+    }
+  ],
+  "living room": [
+    {
+      "en": "living room; lounge; salon; parlor; parlour; guest room",
+      "tone": "salon",
+      "he": "סָלוֹן",
+      "audio": "https://lang_src.s3.amazonaws.com/263_he201504.mp3"
+    },
+    {
+      "en": "arm chair",
+      "tone": "koursa",
+      "he": "כֻּרְסָה",
+      "audio": "https://lang_src.s3.amazonaws.com/266_he201504.mp3"
+    },
+    {
+      "en": "couch",
+      "tone": "sapa",
+      "he": "סַפָּה",
+      "audio": "https://lang_src.s3.amazonaws.com/265_he201504.mp3"
+    },
+    {
+      "en": "carpet",
+      "tone": "shatiah",
+      "he": "שָׁטִיחַ",
+      "audio": ""
+    },
+    {
+      "en": "tableau; picture",
+      "tone": "tmuna",
+      "he": "תְּמוּנָה",
+      "audio": ""
+    }
+  ],
+  "bedroom": [
+    {
+      "en": "bedroom",
+      "tone": "jadar shena",
+      "he": "חֲדַר שֵׁנָה",
+      "audio": "https://lang_src.s3.amazonaws.com/320_he201504.mp3"
+    },
+    {
+      "en": "bed",
+      "tone": "mita",
+      "he": "מִטָּה",
+      "audio": "https://lang_src.s3.amazonaws.com/321_he201504.mp3"
+    },
+    {
+      "en": "mattress",
+      "tone": "mizran",
+      "he": "מִזרָן",
+      "audio": ""
+    },
+    {
+      "en": "pillow",
+      "tone": "car",
+      "he": "כַּר",
+      "audio": ""
+    },
+    {
+      "en": "closet",
+      "tone": "aron",
+      "he": "אָרוֹן",
+      "audio": "https://lang_src.s3.amazonaws.com/328_he201504.mp3"
+    },
+    {
+      "en": "curtain; drapery",
+      "tone": "vilon",
+      "he": "וִילוֹן",
+      "audio": ""
+    },
+    {
+      "en": "mirror",
+      "tone": "mar'a",
+      "he": "מַרְאָה",
+      "audio": "https://lang_src.s3.amazonaws.com/288_he201504.mp3"
+    }
+  ],
+  "bathroom": [
+    {
+      "en": "bathroom",
+      "tone": "hadar ambatia",
+      "he": "חֲדַר אַמְבַטיָה",
+      "audio": "https://lang_src.s3.amazonaws.com/286_he201504.mp3"
+    },
+    {
+      "en": "bathtub",
+      "tone": "ambatia",
+      "he": "אַמְבַטיָה",
+      "audio": "https://lang_src.s3.amazonaws.com/287_he201504.mp3"
+    }
+  ],
+  "religion": [
+    {
+      "en": "Torah",
+      "tone": "tora",
+      "he": "תּוֹרָה",
+      "audio": "http://www.yallahebrew.com/wp-content/uploads/2018/09/torah-in-hebrew-translation.mp3"
+    },
+    {
+      "en": "Thank God",
+      "tone": "baruch hashem",
+      "he": "בָּרוּךְ הַשֵּׁם",
+      "audio": "http://www.yallahebrew.com/wp-content/uploads/2018/10/baruch-hashem-in-hebrew-translation.mp3"
+    },
+    {
+      "en": "holiday",
+      "tone": "hag",
+      "he": "חַג",
+      "audio": ""
+    },
+    {
+      "en": "psalms",
+      "tone": "teilim",
+      "he": "תְּהִילִּים",
+      "audio": "http://www.yallahebrew.com/wp-content/uploads/2018/09/psalms-in-hebrew-translation.mp3"
+    },
+    {
+      "en": "Eden",
+      "tone": "eden",
+      "he": "עֵדֶן",
+      "audio": ""
+    },
+    {
+      "en": "sin",
+      "tone": "het",
+      "he": "חֵטְא",
+      "audio": ""
+    },
+    {
+      "en": "spirit",
+      "tone": "ruah",
+      "he": "רוּחַ",
+      "audio": "http://www.yallahebrew.com/wp-content/uploads/2018/09/hebrew-word-for-spirit.mp3"
+    },
+    {
+      "en": "Holy Spirit",
+      "tone": "Ruah Kodesh",
+      "he": "רוּחַ קֻדַּשׁ",
+      "audio": "http://www.yallahebrew.com/wp-content/uploads/2018/09/holy-spirit-in-hebrew-translation.mp3"
+    },
+    {
+      "en": "Amen; veritably",
+      "tone": "amen",
+      "he": "אָמֵן",
+      "audio": "http://www.yallahebrew.com/wp-content/uploads/2018/09/amen-in-hebrew-translation-1.mp3"
+    },
+    {
+      "en": "christian",
+      "tone": "notzri",
+      "he": "נוֹצְרִי",
+      "audio": "http://www.yallahebrew.com/wp-content/uploads/2018/10/christian-in-hebrew-translation.mp3"
+    }
+  ],
+  "greetings": [
+    {
+      "en": "Bye",
+      "tone": "bay",
+      "he": "בַּי",
+      "audio": "https://lang_src.s3.amazonaws.com/08_h.mp3"
+    },
+    {
+      "en": "Hi",
+      "tone": "hai",
+      "he": "הַי",
+      "audio": "https://lang_src.s3.amazonaws.com/05_h.mp3"
+    },
+    {
+      "en": "Cheers",
+      "tone": "lehaym",
+      "he": "לְחַיִּים",
+      "audio": "https://lang_src.s3.amazonaws.com/54_h.mp3"
+    },
+    {
+      "en": "Hello",
+      "tone": "alan",
+      "he": "אַהְלָן",
+      "audio": "https://lang_src.s3.amazonaws.com/04_h.mp3"
+    },
+    {
+      "en": "Peace",
+      "tone": "shalom",
+      "he": "שָׁלוֹם",
+      "audio": "https://static.memrise.com/uploads/things/audio/186526494_1526396208834.mp3"
+    },
+    {
+      "en": "Thanks; Thank You",
+      "tone": "todah",
+      "he": "תּוֹדָה",
+      "audio": "https://static.memrise.com/uploads/things/audio/90095635_160329_0236_01.mp3"
+    },
+    {
+      "en": "Thank you very much; Much obliged",
+      "tone": "todah rabah",
+      "he": "תּוֹדָה רַבָּה",
+      "audio": "https://static.memrise.com/uploads/things/audio/90095680_160329_0236_55.mp3"
+    },
+    {
+      "en": "Good luck; With Success; Successfully",
+      "tone": "b'hatzlakhá",
+      "he": "בְּהַצְלָחָה",
+      "audio": [
+        "https://static.memrise.com/uploads/things/audio/90095675_160329_0236_50.mp3",
+        "http://www.yallahebrew.com/wp-content/uploads/2018/09/good-luck-in-hebrew-translation.mp3"
+      ]
+    },
+    {
+      "en": "Congratulations; Well Done",
+      "tone": "mazal tov",
+      "he": "מַזָּל טוֹב",
+      "audio": "http://www.yallahebrew.com/wp-content/uploads/2018/09/congratulations-in-hebrew-translation.mp3"
+    },
+    {
+      "en": "Good Morning",
+      "tone": "boker tov",
+      "he": "בֹּקֶר טוֹב",
+      "audio": "http://www.yallahebrew.com/wp-content/uploads/2018/09/good-morning-in-hebrew-translation.mp3"
+    },
+    {
+      "en": "Goodnight",
+      "tone": "laila tov",
+      "he": "לַיְלָה טוֹב",
+      "audio": "http://www.yallahebrew.com/wp-content/uploads/2018/09/goodnight-in-hebrew-translation.mp3"
+    },
+    {
+      "en": "Good Evening",
+      "tone": "erev tov",
+      "he": "עֶרֶב טוֹב",
+      "audio": "http://www.yallahebrew.com/wp-content/uploads/2018/09/Good-evening-in-hebrew-translation.mp3"
+    },
+    {
+      "en": "Good-bye",
+      "tone": "lehitraot",
+      "he": "לְהִתְרָאוֹת",
+      "audio": "https://static.memrise.com/uploads/things/audio/90095638_160329_0236_01.mp3"
+    },
+    {
+      "en": "How are you?; What's up?",
+      "tone": "mah nish'ma?",
+      "he": "מָה נִשְׁמַע?",
+      "audio": "https://static.memrise.com/uploads/things/audio/90095641_160329_0236_04.mp3"
+    },
+    {
+      "en": "What's going on? What's happening?",
+      "tone": "mah koreh?",
+      "he": "מָה קוֹרֶה?",
+      "audio": "https://static.memrise.com/uploads/things/audio/90095643_160329_0236_05.mp3"
+    },
+    {
+      "en": "(m) How are you?",
+      "tone": "mah sh'lom'kha?",
+      "he": "מָה קוֹרֶה?",
+      "audio": "https://static.memrise.com/uploads/things/audio/90095645_160329_0236_08.mp3"
+    },
+    {
+      "en": "(f) How are you?",
+      "tone": "mah sh'lomeh?",
+      "he": "מַה שְׁלוֹמךָ?",
+      "audio": "https://static.memrise.com/uploads/things/audio/90095648_160329_0236_10.mp3"
+    },
+    {
+      "en": "Alright; OK; Fine",
+      "tone": "beseder",
+      "he": "בְּסֵדֶר",
+      "audio": "https://static.memrise.com/uploads/things/audio/90095650_160329_0236_12.mp3"
+    },
+    {
+      "en": "Everything's fine; No problem",
+      "tone": "hakol beseder",
+      "he": "הַכֹּל בְּסֵדֶר",
+      "audio": ""
+    },
+    {
+      "en": "Sorry; Excuse me",
+      "tone": "s'liychah",
+      "he": "סְלִיחָה",
+      "audio": "https://static.memrise.com/uploads/things/audio/90095653_160329_0236_15.mp3"
+    },
+    {
+      "en": "Please",
+      "tone": "b'vakashah",
+      "he": "בְּבַקָּשָׁה",
+      "audio": "https://static.memrise.com/uploads/things/audio/90095654_160329_0236_17.mp3"
+    },
+    {
+      "en": "Welcome",
+      "tone": "barokh' haba",
+      "he": "בָּרֹךְ הַבָּא",
+      "audio": "https://static.memrise.com/uploads/things/audio/90095670_160329_0236_43.mp3"
+    },
+    {
+      "en": "You're welcome",
+      "tone": "eyn b'ad mah",
+      "he": "אֵין בְּעַד מָה",
+      "audio": "https://static.memrise.com/uploads/things/audio/90095655_160329_0236_20.mp3"
+    },
+    {
+      "en": "Happy New Year",
+      "tone": "shana tova",
+      "he": "שָׁנָה טוֹבָה",
+      "audio": "http://www.yallahebrew.com/wp-content/uploads/2018/09/happy-new-year-in-hebrew-translation-1.mp3"
+    },
+    {
+      "en": "Happy Birthday",
+      "tone": "yom huledet sameach",
+      "he": "יום הֻלֶּדֶת שָׂמֵחַ",
+      "audio": "http://www.yallahebrew.com/wp-content/uploads/2018/09/happy-birthday-in-hebrew-translation.mp3"
+    },
+    {
+      "en": "Happy Hanukkah",
+      "tone": "",
+      "he": "חַג חֲנֻכָּה שָׂמֵחַ",
+      "audio": "http://www.yallahebrew.com/wp-content/uploads/2018/09/happy-hanukkah-in-hebrew-translation.mp3"
+    },
+    {
+      "en": "Happy Passover",
+      "tone": "pesach sameach",
+      "he": "פֶּסַח שָׂמֵחַ",
+      "audio": "http://www.yallahebrew.com/wp-content/uploads/2018/09/happy-passover-in-hebrew-translation.mp3"
+    },
+    {
+      "en": "Happy Holiday",
+      "tone": "hag sameach",
+      "he": "חַג שָׂמֵחַ",
+      "audio": "http://www.yallahebrew.com/wp-content/uploads/2018/09/happy-holidays-in-hebrew-translation.mp3"
+    },
+    {
+      "en": "See you later",
+      "tone": "nitrae meuhar yoter",
+      "he": "נִתְרָאֶה מְאֻחָר יוֹתֵר",
+      "audio": "https://lang_src.s3.amazonaws.com/09_h.mp3"
+    },
+    {
+      "en": "See you soon",
+      "tone": "nitrae bekarov",
+      "he": "נִתְרָאֶה בְּקָרוֹב",
+      "audio": "https://lang_src.s3.amazonaws.com/10_h.mp3"
+    },
+    {
+      "en": "See you tomorrow",
+      "tone": "nitrae mahar",
+      "he": "נִתְרָאֶה מָחָר",
+      "audio": "https://lang_src.s3.amazonaws.com/11_h.mp3"
+    }
+  ],
+  "holidays": [
+    {
+      "en": "Beginning of the Month; Head of the Month",
+      "tone": "Rosh Hodesh",
+      "he": "רֹאשׁ חֻדַּשׁ",
+      "audio": ""
+    },
+    {
+      "en": "Passover",
+      "tone": "",
+      "he": "‬חַג הַפֶּסַח",
+      "audio": "http://www.yallahebrew.com/wp-content/uploads/2018/10/passover-in-hebrew-translation.mp3"
+    }
+  ],
+  "days": [
+    {
+      "en": "Monday",
+      "tone": "sheni",
+      "he": "יוֹם שֵׁנִי",
+      "audio": "http://www.yallahebrew.com/wp-content/uploads/2018/09/Monday-in-hebrew-translation.mp3"
+    },
+    {
+      "en": "Tuesday",
+      "tone": "shlishi",
+      "he": "יוֹם שְׁלִישִׁי",
+      "audio": "http://www.yallahebrew.com/wp-content/uploads/2018/09/Tuesday-in-hebrew-translation.mp3"
+    },
+    {
+      "en": "Wednesday",
+      "tone": "",
+      "he": "יוֹם רְבִיעִי",
+      "audio": "http://www.yallahebrew.com/wp-content/uploads/2018/09/Wednesday-in-hebrew-translation.mp3"
+    },
+    {
+      "en": "Thursday",
+      "tone": "",
+      "he": "יוֹם חֲמִישִׁי",
+      "audio": "http://www.yallahebrew.com/wp-content/uploads/2018/09/Thursday-in-hebrew-translation.mp3"
+    },
+    {
+      "en": "Friday",
+      "tone": "shishi",
+      "he": "יוֹם שִׁשִּׁי",
+      "audio": "http://www.yallahebrew.com/wp-content/uploads/2018/09/Friday-in-hebrew-translation.mp3"
+    },
+    {
+      "en": "Saturday",
+      "tone": "shabat",
+      "he": "שַׁבָּת",
+      "audio": "http://www.yallahebrew.com/wp-content/uploads/2018/09/Saturday-in-hebrew-translation.mp3"
+    },
+    {
+      "en": "Sunday",
+      "tone": "rishon",
+      "he": "יוֹם רִאשׁוֹן",
+      "audio": "http://www.yallahebrew.com/wp-content/uploads/2018/09/Sunday-in-hebrew-translation.mp3"
+    }
+  ],
+  "months": [
+    {
+      "en": "March",
+      "tone": "",
+      "he": "מַרְס",
+      "audio": "http://www.yallahebrew.com/wp-content/uploads/2018/09/March-in-hebrew-translation.mp3"
+    },
+    {
+      "en": "November",
+      "tone": "november",
+      "he": "נוֹבֶמְבֶּר",
+      "audio": "http://www.yallahebrew.com/wp-content/uploads/2018/09/November-in-hebrew-translation.mp3"
+    }
+  ],
+  "people": [
+    {
+      "en": "son",
+      "tone": "ben",
+      "he": "בֵּן",
+      "audio": "https://static.memrise.com/uploads/things/audio/186500513_1526397310709.mp3"
+    },
+    {
+      "en": "the sons",
+      "tone": "",
+      "he": "בנים",
+      "audio": "https://static.memrise.com/uploads/things/audio/186500514_1526397315128.mp3"
+    },
+    {
+      "en": "daughter",
+      "tone": "bat",
+      "he": "בַּת",
+      "audio": "https://static.memrise.com/uploads/things/audio/186500515_1526397319592.mp3"
+    },
+    {
+      "en": "mother",
+      "tone": "ima",
+      "he": "אִמָא",
+      "audio": "https://static.memrise.com/uploads/things/audio/186500512_1526397306275.mp3"
+    },
+    {
+      "en": "father",
+      "tone": "av",
+      "he": "אָב",
+      "audio": ""
+    },
+    {
+      "en": "daddy",
+      "tone": "aba",
+      "he": "אַבָּא",
+      "audio": "https://static.memrise.com/uploads/things/audio/186500511_1526397301830.mp3"
+    },
+    {
+      "en": "parent",
+      "tone": "horeh",
+      "he": "הוֹרֶה",
+      "audio": "http://www.yallahebrew.com/wp-content/uploads/2018/10/parent-in-hebrew-translation.mp3"
+    },
+    {
+      "en": "baby",
+      "tone": "tiynok",
+      "he": "תִּינוֹק",
+      "audio": "http://www.yallahebrew.com/wp-content/uploads/2018/09/Baby-in-hebrew-translation.mp3"
+    },
+    {
+      "en": "man",
+      "tone": "iyesh",
+      "he": "אִיֵּשׁ",
+      "audio": ""
+    },
+    {
+      "en": "brother; monk; fireplace",
+      "tone": "ah",
+      "he": "אָח",
+      "audio": "http://www.yallahebrew.com/wp-content/uploads/2018/09/brother-in-hebrew-translation.mp3"
+    },
+    {
+      "en": "brotherhood; guild",
+      "tone": "ahava",
+      "he": "אַחֲוָה",
+      "audio": ""
+    },
+    {
+      "en": "sister",
+      "tone": "achot",
+      "he": "אָחוֹת",
+      "audio": "http://www.yallahebrew.com/wp-content/uploads/2018/10/sister-in-hebrew-translation.mp3"
+    },
+    {
+      "en": "parents",
+      "tone": "horim",
+      "he": "הוֹרִים",
+      "audio": "https://static.memrise.com/uploads/things/audio/186500529_1526397579707.mp3"
+    },
+    {
+      "en": "family",
+      "tone": "mishpacha",
+      "he": "מִשׁפָּחָה",
+      "audio": "https://static.memrise.com/uploads/things/audio/186500509_1526397291093.mp3"
+    },
+    {
+      "en": "families",
+      "tone": "mishpachot",
+      "he": "משפחות",
+      "audio": "https://static.memrise.com/uploads/things/audio/186500510_1526397297048.mp3"
+    },
+    {
+      "en": "nation",
+      "tone": "am",
+      "he": "עַם",
+      "audio": ""
+    },
+    {
+      "en": "grandfather",
+      "tone": "saba",
+      "he": "סַבָּא",
+      "audio": "http://www.yallahebrew.com/wp-content/uploads/2018/09/grandpa-in-hebrew-translation.mp3"
+    },
+    {
+      "en": "grandmother",
+      "tone": "sav'ta",
+      "he": "סָבְתָא",
+      "audio": "http://www.yallahebrew.com/wp-content/uploads/2018/09/grandma-in-hebrew-translation.mp3"
+    },
+    {
+      "en": "grandson",
+      "tone": "nehed",
+      "he": "נֶכֶד",
+      "audio": "https://static.memrise.com/uploads/things/audio/186500523_1526397355312.mp3"
+    },
+    {
+      "en": "granddaughter",
+      "tone": "nehda",
+      "he": "נֶכְדָּה",
+      "audio": "https://static.memrise.com/uploads/things/audio/186500524_1526397360092.mp3"
+    },
+    {
+      "en": "uncle",
+      "tone": "dod",
+      "he": "דּוֹד",
+      "audio": "https://static.memrise.com/uploads/things/audio/186500525_1526397364681.mp3"
+    },
+    {
+      "en": "aunt",
+      "tone": "doda",
+      "he": "דּוֹדָה",
+      "audio": "https://static.memrise.com/uploads/things/audio/186500527_1526397373603.mp3"
+    },
+    {
+      "en": "husband",
+      "tone": "baal",
+      "he": "בַּעַל",
+      "audio": "https://static.memrise.com/uploads/things/audio/186500530_1526397585286.mp3"
+    },
+    {
+      "en": "wife; woman",
+      "tone": "ishah",
+      "he": "אִשָּׁה",
+      "audio": "https://static.memrise.com/uploads/things/audio/186500531_1526397589888.mp3"
+    },
+    {
+      "en": "king",
+      "tone": "melekh",
+      "he": "מֶלֶךְ",
+      "audio": "http://www.yallahebrew.com/wp-content/uploads/2018/09/king-in-hebrew-translation.mp3"
+    },
+    {
+      "en": "quen",
+      "tone": "malkah",
+      "he": "מַלְכָּה",
+      "audio": "https://static.memrise.com/uploads/things/audio/65490987_1437507223350.mp3"
+    },
+    {
+      "en": "pharaoh",
+      "tone": "paro",
+      "he": "פַּרְעֹה",
+      "audio": ""
+    },
+    {
+      "en": "president",
+      "tone": "hanashoiy",
+      "he": "הַנָּשִׂיא",
+      "audio": ""
+    },
+    {
+      "en": "master; mister",
+      "tone": "adon",
+      "he": "אָדוֹן",
+      "audio": ""
+    },
+    {
+      "en": "neighbor",
+      "tone": "shakhen",
+      "he": "שָׁכֵן",
+      "audio": ""
+    },
+    {
+      "en": "boy; child",
+      "tone": "yeled",
+      "he": "יֶלֶד",
+      "audio": ""
+    },
+    {
+      "en": "girl",
+      "tone": "",
+      "he": "יַלְדָּה",
+      "audio": "http://www.yallahebrew.com/wp-content/uploads/2018/10/girl-in-hebrew-translation.mp3"
+    },
+    {
+      "en": "adult",
+      "tone": "m'vugar",
+      "he": "מְבֻגָּר",
+      "audio": ""
+    },
+    {
+      "en": "human",
+      "tone": "ben anush",
+      "he": "בֵּן אָנוּשׁ",
+      "audio": ""
+    },
+    {
+      "en": "friend",
+      "tone": "chaber",
+      "he": "חַבֵּר",
+      "audio": "http://www.yallahebrew.com/wp-content/uploads/2018/09/friend-in-hebrew-translation.mp3"
+    },
+    {
+      "en": "victim",
+      "tone": "kar'ban",
+      "he": "קָרְבָּן",
+      "audio": ""
+    },
+    {
+      "en": "player",
+      "tone": "sach'kan",
+      "he": "שַׂחְקָן",
+      "audio": ""
+    },
+    {
+      "en": "fan",
+      "tone": "ohed",
+      "he": "אוֹהֵד",
+      "audio": ""
+    },
+    {
+      "en": "crown",
+      "tone": "keter",
+      "he": "כֶּתֶר",
+      "audio": ""
+    },
+    {
+      "en": "person",
+      "tone": "adam",
+      "he": "אָדָם",
+      "audio": ""
+    }
+  ],
+  "men": [
+    {
+      "en": "Aaron",
+      "tone": "Aharon",
+      "he": "אַהֲרֹן",
+      "audio": "http://www.yallahebrew.com/wp-content/uploads/2018/09/Aaron-in-hebrew-translation.mp3.mp3"
+    },
+    {
+      "en": "Abraham",
+      "tone": "avraham",
+      "he": "אַבְרָהָם",
+      "audio": "https://lang_src.s3.amazonaws.com/077_he201504.mp3"
+    },
+    {
+      "en": "Adam",
+      "tone": "adam",
+      "he": "אָדָם",
+      "audio": "https://lang_src.s3.amazonaws.com/074_he201504.mp3"
+    },
+    {
+      "en": "Moses",
+      "tone": "moshe",
+      "he": "מֹשֶׁה",
+      "audio": "https://lang_src.s3.amazonaws.com/066_he201504.mp3"
+    },
+    {
+      "en": "Mohammed",
+      "tone": "muhamad",
+      "he": "מֻחַמַּד",
+      "audio": "https://lang_src.s3.amazonaws.com/067_he201504.mp3"
+    },
+    {
+      "en": "Michael",
+      "tone": "mikhael",
+      "he": "מִיכָאֵל",
+      "audio": "https://lang_src.s3.amazonaws.com/068_he201504.mp3"
+    },
+    {
+      "en": "Jesus",
+      "tone": "ieshu",
+      "he": "יֵשׁוּ",
+      "audio": "http://www.yallahebrew.com/wp-content/uploads/2018/09/jesus-in-hebrew-translation.mp3"
+    },
+    {
+      "en": "Joshua",
+      "tone": "Ieoshua",
+      "he": "יְהוֹשֻׁעַ",
+      "audio": "http://www.yallahebrew.com/wp-content/uploads/2018/09/joshua-in-hebrew-translation.mp3"
+    },
+    {
+      "en": "Joseph",
+      "tone": "iosef",
+      "he": "יוֹסֵף",
+      "audio": "https://lang_src.s3.amazonaws.com/071_he201504.mp3"
+    },
+    {
+      "en": "John",
+      "tone": "iojanan",
+      "he": "יוֹחָנָן",
+      "audio": "https://lang_src.s3.amazonaws.com/069_he201504.mp3"
+    },
+    {
+      "en": "Solomon",
+      "tone": "shlomo",
+      "he": "שְׁלוֹמֹה",
+      "audio": "https://lang_src.s3.amazonaws.com/076_he201504.mp3"
+    }
+  ],
+  "women": [
+    {
+      "en": "Ann",
+      "tone": "jana",
+      "he": "חַנָּה",
+      "audio": "https://lang_src.s3.amazonaws.com/073_he201504.mp3"
+    },
+    {
+      "en": "Abigail",
+      "tone": "Avigail",
+      "he": "אֲבִיגַיִל",
+      "audio": "http://www.yallahebrew.com/wp-content/uploads/2018/09/Abigail-in-hebrew-translation.mp3.mp3"
+    },
+    {
+      "en": "Elisabeth",
+      "tone": "izevel",
+      "he": "אִיזֶבֶל",
+      "audio": "https://lang_src.s3.amazonaws.com/072_he201504.mp3"
+    },
+    {
+      "en": "Eve",
+      "tone": "java",
+      "he": "חַוָּה",
+      "audio": "https://lang_src.s3.amazonaws.com/075_he201504.mp3"
+    },
+    {
+      "en": "Hannah",
+      "tone": "hana",
+      "he": "חַנָּה",
+      "audio": "http://www.yallahebrew.com/wp-content/uploads/2018/09/Hannah-in-hebrew-translation.mp3"
+    },
+    {
+      "en": "Myrtle",
+      "tone": "hadas",
+      "he": "הֲדַס",
+      "audio": ""
+    },
+    {
+      "en": "Mary",
+      "tone": "miriam",
+      "he": "מִרְיָם",
+      "audio": "https://lang_src.s3.amazonaws.com/070_he201504.mp3"
+    },
+    {
+      "en": "Hadassah (Esther)",
+      "tone": "hadasa",
+      "he": "הֲדַסָּה",
+      "audio": ""
+    },
+    {
+      "en": "Sarah",
+      "tone": "sara",
+      "he": "שָׂרָה",
+      "audio": "https://lang_src.s3.amazonaws.com/078_he201504.mp3"
+    }
+  ],
+  "emotions": [
+    {
+      "en": "love; affection",
+      "tone": "ahava",
+      "he": "אַהֲבָה",
+      "audio": ""
+    }
+  ],
+  "money": [
+    {
+      "en": "bank",
+      "tone": "ban'k",
+      "he": "בַּנְק",
+      "audio": ""
+    },
+    {
+      "en": "wallet; purse",
+      "tone": "arnak",
+      "he": "אַרְנָק",
+      "audio": "https://lang_src.s3.amazonaws.com/h570_2013.mp3"
+    },
+    {
+      "en": "money; silver",
+      "tone": "kesef",
+      "he": "כֶּסֶף",
+      "audio": "https://lang_src.s3.amazonaws.com/679_h.mp3"
+    },
+    {
+      "en": "fortune; coriander; success; luck",
+      "tone": "gad",
+      "he": "גַד",
+      "audio": ""
+    },
+    {
+      "en": "market",
+      "tone": "shuk",
+      "he": "שׁוּק",
+      "audio": ""
+    }
+  ],
+  "toys": [
+    {
+      "en": "balloon",
+      "tone": "balon",
+      "he": "בָּלוֹן",
+      "audio": ""
+    }
+  ],
+  "chemistry": [
+    {
+      "en": "atom",
+      "tone": "atom",
+      "he": "אָטוֹם",
+      "audio": "http://www.yallahebrew.com/wp-content/uploads/2018/10/atom-in-hebrew-translation-1.mp3"
+    },
+    {
+      "en": "iron",
+      "tone": "barzel",
+      "he": "בַּרְזֶל",
+      "audio": "http://www.yallahebrew.com/wp-content/uploads/2018/10/iron-in-hebrew-translation.mp3"
+    },
+    {
+      "en": "gold",
+      "tone": "zahav",
+      "he": "זָהָב",
+      "audio": "http://www.yallahebrew.com/wp-content/uploads/2018/10/gold-in-hebrew-translation.mp3"
+    },
+    {
+      "en": "oxygen",
+      "tone": "cham'tzan",
+      "he": "חַמְצָן",
+      "audio": "https://static.memrise.com/uploads/things/audio/65824533_1437105907040.mp3"
+    }
+  ],
+  "anatomy": [
+    {
+      "en": "body",
+      "tone": "guf",
+      "he": "גּוּף",
+      "audio": "https://lang_src.s3.amazonaws.com/1082.mp3"
+    },
+    {
+      "en": "back",
+      "tone": "gav",
+      "he": "גַב",
+      "audio": "https://static.memrise.com/uploads/things/audio/209806906_1548238012292.mp3"
+    },
+    {
+      "en": "head",
+      "tone": "rosh",
+      "he": "רֹאשׁ",
+      "audio": "https://lang_src.s3.amazonaws.com/1083.mp3"
+    },
+    {
+      "en": "face",
+      "tone": "paniym",
+      "he": "פָּנִים",
+      "audio": "https://static.memrise.com/uploads/things/audio/209806907_1548238016752.mp3"
+    },
+    {
+      "en": "nose",
+      "tone": "af",
+      "he": "אַף",
+      "audio": "https://static.memrise.com/uploads/things/audio/209806901_1548237987411.mp3"
+    },
+    {
+      "en": "eye",
+      "tone": "ayin",
+      "he": "עַיִן",
+      "audio": "https://static.memrise.com/uploads/things/audio/209806912_1548238040371.mp3"
+    },
+    {
+      "en": "ear",
+      "tone": "ozen",
+      "he": "אֹזֶן",
+      "audio": "https://static.memrise.com/uploads/things/audio/209806910_1548238031013.mp3"
+    },
+    {
+      "en": "mouth",
+      "tone": "pe",
+      "he": "פֶּה",
+      "audio": "https://static.memrise.com/uploads/things/audio/209806902_1548237993540.mp3"
+    },
+    {
+      "en": "tooth",
+      "tone": "shen",
+      "he": "שֵׁן",
+      "audio": "https://static.memrise.com/uploads/things/audio/209806918_1548238068703.mp3"
+    },
+    {
+      "en": "neck",
+      "tone": "tzavar",
+      "he": "צַוָּאר",
+      "audio": "https://lang_src.s3.amazonaws.com/1085.mp3"
+    },
+    {
+      "en": "shoulder",
+      "tone": "catef",
+      "he": "כָּתֵף",
+      "audio": "https://lang_src.s3.amazonaws.com/1086.mp3"
+    },
+    {
+      "en": "chest",
+      "tone": "haze",
+      "he": "חָזֶה",
+      "audio": "https://lang_src.s3.amazonaws.com/1090.mp3"
+    },
+    {
+      "en": "arm",
+      "tone": "zroa",
+      "he": "זְרוֹעַ",
+      "audio": "https://lang_src.s3.amazonaws.com/1088.mp3"
+    },
+    {
+      "en": "armpit",
+      "tone": "bet ashehi",
+      "he": "בֵּית הַשֶּׁחִי",
+      "audio": "https://lang_src.s3.amazonaws.com/1089.mp3"
+    },
+    {
+      "en": "elbow",
+      "tone": "marpek",
+      "he": "מַרְפֵּק",
+      "audio": "https://lang_src.s3.amazonaws.com/1091.mp3"
+    },
+    {
+      "en": "finger",
+      "tone": "etz'ba",
+      "he": "אֶצְבַּע",
+      "audio": "https://static.memrise.com/uploads/things/audio/209806908_1548238021423.mp3"
+    },
+    {
+      "en": "hand; arm",
+      "tone": "iad",
+      "he": "יָד",
+      "audio": [
+        "https://static.memrise.com/uploads/things/audio/209806914_1548238050905.mp3",
+        "http://www.yallahebrew.com/wp-content/uploads/2018/09/hand-hebrew-translation.mp3"
+      ]
+    },
+    {
+      "en": "heart",
+      "tone": "lev",
+      "he": "לֵב",
+      "audio": "https://static.memrise.com/uploads/things/audio/209806905_1548238007893.mp3"
+    },
+    {
+      "en": "hair",
+      "tone": "sear",
+      "he": "שֵׂעַר",
+      "audio": "https://static.memrise.com/uploads/things/audio/209806903_1548237998318.mp3"
+    },
+    {
+      "en": "skin",
+      "tone": "or",
+      "he": "עוֹר",
+      "audio": "https://lang_src.s3.amazonaws.com/1084.mp3"
+    },
+    {
+      "en": "belly; stomach",
+      "tone": "beten",
+      "he": "בֶּטֶן",
+      "audio": "https://static.memrise.com/uploads/things/audio/209806904_1548238307165.mp3"
+    },
+    {
+      "en": "waist",
+      "tone": "moten",
+      "he": "מֹתֶן",
+      "audio": "https://lang_src.s3.amazonaws.com/1093.mp3"
+    },
+    {
+      "en": "hip; thigh",
+      "tone": "yareh",
+      "he": "יָרֵךְ",
+      "audio": "https://lang_src.s3.amazonaws.com/1096.mp3"
+    },
+    {
+      "en": "buttocks",
+      "tone": "ahoraim",
+      "he": "אֲחוֹרַיִם",
+      "audio": "https://lang_src.s3.amazonaws.com/1094.mp3"
+    },
+    {
+      "en": "leg",
+      "tone": "regel",
+      "he": "רֶגֶל",
+      "audio": "https://static.memrise.com/uploads/things/audio/209806916_1548238059783.mp3"
+    },
+    {
+      "en": "foot",
+      "tone": "caf regel",
+      "he": "כַּף רֶגֶל",
+      "audio": "https://lang_src.s3.amazonaws.com/1098.mp3"
+    },
+    {
+      "en": "knee",
+      "tone": "bereh",
+      "he": "בֶּרֶךְ",
+      "audio": "https://lang_src.s3.amazonaws.com/1097.mp3"
+    }
+  ],
+  "astronomy": [
+    {
+      "en": "sun",
+      "tone": "shemesh",
+      "he": "שֶׁמֶשׁ",
+      "audio": "http://www.yallahebrew.com/wp-content/uploads/2018/10/sun-in-hebrew-translation.mp3"
+    },
+    {
+      "en": "moon; satellite",
+      "tone": "iareah",
+      "he": "יָרֵחַ",
+      "audio": ""
+    },
+    {
+      "en": "morning",
+      "tone": "boker",
+      "he": "בּוֹקֵר",
+      "audio": "https://static.memrise.com/uploads/things/audio/90095660_160329_0236_25.mp3"
+    },
+    {
+      "en": "noon; midday",
+      "tone": "tzoraim",
+      "he": "צָהֳרַיִים",
+      "audio": ""
+    },
+    {
+      "en": "evening",
+      "tone": "erev",
+      "he": "עֶרֶב",
+      "audio": "https://static.memrise.com/uploads/things/audio/90095661_160329_0236_27.mp3"
+    },
+    {
+      "en": "night",
+      "tone": "laila",
+      "he": "לַיְלָה",
+      "audio": "https://static.memrise.com/uploads/things/audio/90095659_160329_0236_22.mp3"
+    },
+    {
+      "en": "dark",
+      "tone": "(m) kehe; (f) keha",
+      "he": "כֵּהֶה / כהה",
+      "audio": "https://lang_src.s3.amazonaws.com/213_h.ogg"
+    },
+    {
+      "en": "light",
+      "tone": "or",
+      "he": "אוֹר",
+      "audio": "http://www.yallahebrew.com/wp-content/uploads/2018/09/hebrew-word-for-light.mp3"
+    }
+  ],
+  "geography": [
+    {
+      "en": "land; country; earth; world",
+      "tone": "eretz",
+      "he": "אֶרֶץ",
+      "audio": "http://www.yallahebrew.com/wp-content/uploads/2018/09/earth-hebrew-translation.mp3"
+    },
+    {
+      "en": "Israel",
+      "tone": "yisho'rael",
+      "he": "יִשְׂרָאֵל",
+      "audio": ""
+    },
+    {
+      "en": "jungle",
+      "tone": "g'un'gel",
+      "he": "ג'וּנגֶל",
+      "audio": ""
+    },
+    {
+      "en": "desert",
+      "tone": "mid'bar",
+      "he": "מִדבָּר",
+      "audio": ""
+    },
+    {
+      "en": "park",
+      "tone": "par'k",
+      "he": "פַּרְק",
+      "audio": ""
+    },
+    {
+      "en": "Tiberias",
+      "tone": "tiveria",
+      "he": "טְבֶרְיָה",
+      "audio": ""
+    },
+    {
+      "en": "stone",
+      "tone": "even",
+      "he": "אֶבֶן",
+      "audio": "http://www.yallahebrew.com/wp-content/uploads/2018/10/stone-in-hebrew-translation.mp3"
+    },
+    {
+      "en": "cloud",
+      "tone": "anan",
+      "he": "עָנָן",
+      "audio": ""
+    }
+  ],
+  "languages": [
+    {
+      "en": "Hebrew",
+      "tone": "iv'riyt",
+      "he": "עִבְרִית",
+      "audio": "https://static.memrise.com/uploads/things/audio/90095664_160329_0236_37.mp3"
+    },
+    {
+      "en": "English",
+      "tone": "an'g'liyt",
+      "he": "אַנְגְּלִית",
+      "audio": "https://static.memrise.com/uploads/things/audio/90095666_160329_0236_40.mp3"
+    }
+  ],
+  "virtues": [
+    {
+      "en": "compassion",
+      "tone": "shimesh",
+      "he": "רַחֲמִים",
+      "audio": "http://www.yallahebrew.com/wp-content/uploads/2018/10/compassion-in-hebrew-translation.mp3"
+    },
+    {
+      "en": "honor",
+      "tone": "kavod",
+      "he": "כָּבוֹד",
+      "audio": "http://www.yallahebrew.com/wp-content/uploads/2018/10/honor-in-hebrew-translation.mp3"
+    },
+    {
+      "en": "mercy",
+      "tone": "rahamim",
+      "he": "רַחֲמִים",
+      "audio": "http://www.yallahebrew.com/wp-content/uploads/2018/10/mercy-in-hebrew-translation.mp3"
+    },
+    {
+      "en": "faithful",
+      "tone": "ne'eman",
+      "he": "נֶאֱמָן",
+      "audio": ""
+    }
+  ],
+  "transportation": [
+    {
+      "en": "bus",
+      "tone": "ottobus",
+      "he": "אוֹטוֹבּוּס",
+      "audio": "https://lang_src.s3.amazonaws.com/597_h.mp3"
+    },
+    {
+      "en": "train",
+      "tone": "rakevet",
+      "he": "רַכֶּבֶת",
+      "audio": "https://lang_src.s3.amazonaws.com/591_h.mp3"
+    },
+    {
+      "en": "ticket",
+      "tone": "kartis",
+      "he": "כַּרְטִיס",
+      "audio": "https://lang_src.s3.amazonaws.com/h653_2013.mp3"
+    },
+    {
+      "en": "destination",
+      "tone": "iaad",
+      "he": "יַעַד",
+      "audio": "https://lang_src.s3.amazonaws.com/h661_2013.mp3"
+    },
+    {
+      "en": "voyage; travel",
+      "tone": "nesiaa",
+      "he": "נְסִיעָה",
+      "audio": "https://lang_src.s3.amazonaws.com/h673_2013.mp3"
+    }
+  ],
+  "residence": [
+    {
+      "en": "house; home",
+      "tone": "bayit",
+      "he": "בַּיִת",
+      "audio": "http://www.yallahebrew.com/wp-content/uploads/2018/09/house-hebrew-translation.mp3"
+    },
+    {
+      "en": "building",
+      "tone": "binian",
+      "he": "בִּניָן",
+      "audio": ""
+    },
+    {
+      "en": "room",
+      "tone": "heder",
+      "he": "חֶדֶר",
+      "audio": "https://lang_src.s3.amazonaws.com/h729_2013.mp3"
+    },
+    {
+      "en": "balcony; terrace",
+      "tone": "mirpeset",
+      "he": "מִרפֶּסֶת",
+      "audio": ""
+    },
+    {
+      "en": "apartment",
+      "tone": "dira",
+      "he": "דִירָה",
+      "audio": ""
+    },
+    {
+      "en": "door",
+      "tone": "delet",
+      "he": "דֶלֶת",
+      "audio": ""
+    },
+    {
+      "en": "window",
+      "tone": "halon",
+      "he": "חַלּוֹן",
+      "audio": "https://lang_src.s3.amazonaws.com/411_he201504.mp3"
+    },
+    {
+      "en": "floor",
+      "tone": "ritzpa",
+      "he": "רִצְפָּה",
+      "audio": "https://lang_src.s3.amazonaws.com/410_he201504.mp3"
+    },
+    {
+      "en": "ceiling",
+      "tone": "tiqra",
+      "he": "תִּקְרָה",
+      "audio": "https://lang_src.s3.amazonaws.com/446_he201504.mp3"
+    },
+    {
+      "en": "wall",
+      "tone": "qir",
+      "he": "קִיר",
+      "audio": "https://lang_src.s3.amazonaws.com/445_he201504.mp3"
+    },
+    {
+      "en": "stairs",
+      "tone": "midragot",
+      "he": "מִדְּרָגוֹת",
+      "audio": ""
+    },
+    {
+      "en": "elevator",
+      "tone": "maalit",
+      "he": "מַעֲלִית",
+      "audio": ""
+    },
+    {
+      "en": "hive; beehive",
+      "tone": "caveret",
+      "he": "כַּוֶרֶת",
+      "audio": "https://static.memrise.com/uploads/things/audio/65490961_1437507203689.mp3"
+    },
+    {
+      "en": "honeycomb",
+      "tone": "chalat d'vash",
+      "he": "חַלַת דְבַשׁ",
+      "audio": "https://static.memrise.com/uploads/things/audio/65696900_1438110806690.mp3"
+    }
+  ],
+  "tools": [
+    {
+      "en": "sting",
+      "tone": "oketz",
+      "he": "עֹקֶץ",
+      "audio": "https://static.memrise.com/uploads/things/audio/65490870_1437507172151.mp3"
+    }
+  ],
+  "activities": [
+    {
+      "en": "to rest; to relax",
+      "tone": "nah",
+      "he": "‬נָח",
+      "audio": "http://www.yallahebrew.com/wp-content/uploads/2018/10/to-rest-in-hebrew-translation.mp3"
+    },
+    {
+      "en": "relax",
+      "tone": "teraga",
+      "he": "תֵּרָגַע",
+      "audio": ""
+    },
+    {
+      "en": "work",
+      "tone": "avoda",
+      "he": "עֲבוֹדָה",
+      "audio": ""
+    },
+    {
+      "en": "to read",
+      "tone": "",
+      "he": "לִקְרוֹא",
+      "audio": ""
+    },
+    {
+      "en": "to market",
+      "tone": "leshavek",
+      "he": "לְשַׁוֵּק",
+      "audio": ""
+    }
+  ],
+  "professions": [
+    {
+      "en": "workers; worker bees",
+      "tone": "poalot",
+      "he": "פּוֹעָלוֹת",
+      "audio": "https://static.memrise.com/uploads/things/audio/65697181_1438110940113.mp3"
+    },
+    {
+      "en": "salesmen",
+      "tone": "moher",
+      "he": "מוֹכֵר",
+      "audio": ""
+    },
+    {
+      "en": "commander",
+      "tone": "mefaked",
+      "he": "מְפַקֵד",
+      "audio": ""
+    },
+    {
+      "en": "gardener",
+      "tone": "ganan",
+      "he": "גַּנָּן",
+      "audio": ""
+    },
+    {
+      "en": "thief",
+      "tone": "ganav",
+      "he": "גַנָב",
+      "audio": ""
+    },
+    {
+      "en": "marketing",
+      "tone": "shivook",
+      "he": "שִׁוּוּק",
+      "audio": ""
+    },
+    {
+      "en": "student",
+      "tone": "(m) talmid / (f) talmida",
+      "he": "תַּלְמִיד / תַּלְמִידה",
+      "audio": "https://lang_src.s3.amazonaws.com/h415_2013.mp3"
+    }
+  ],
+  "music": [
+    {
+      "en": "sound",
+      "tone": "tzlil",
+      "he": "צְלִיל",
+      "audio": ""
+    },
+    {
+      "en": "chord",
+      "tone": "akord",
+      "he": "אָקוֹרְד",
+      "audio": "http://www.yallahebrew.com/wp-content/uploads/2018/10/chord-in-hebrew-translation.mp3"
+    },
+    {
+      "en": "music",
+      "tone": "muziykah",
+      "he": "מוּסִיקָה",
+      "audio": "http://www.yallahebrew.com/wp-content/uploads/2018/10/music-in-hebrew-translation.mp3"
+    }
+  ],
+  "measurements": [
+    {
+      "en": "(m) big",
+      "tone": "gadol",
+      "he": "גָּדוֹל",
+      "audio": "http://www.yallahebrew.com/wp-content/uploads/2018/09/big-hebrew-translation.mp3"
+    },
+    {
+      "en": "(m) small",
+      "tone": "katan",
+      "he": "קָטָן",
+      "audio": "http://www.yallahebrew.com/wp-content/uploads/2018/09/small-hebrew-translation.mp3"
+    },
+    {
+      "en": "end",
+      "tone": "sof",
+      "he": "סוֹף",
+      "audio": "http://www.yallahebrew.com/wp-content/uploads/2018/09/end-hebrew-translation.mp3"
+    },
+    {
+      "en": "an amount; sum; total",
+      "tone": "schum",
+      "tone_ro": "shum",
+      "he": "סְכוּם",
+      "audio": ""
+    },
+    {
+      "en": "percent; proportion; rate; cent",
+      "tone": "ahuz",
+      "he": "אָחוּז",
+      "audio": ""
+    }
+  ],
+  "clothing": [
+    {
+      "en": "pocket",
+      "tone": "kiys",
+      "he": "כִּיס",
+      "audio": ""
+    },
+    {
+      "en": "cloth; canvas; textile",
+      "tone": "bad",
+      "he": "בַּד",
+      "audio": ""
+    },
+    {
+      "en": "clothes",
+      "tone": "bgadim",
+      "he": "בֶּגֶדים",
+      "audio": "https://lang_src.s3.amazonaws.com/h524_2013.mp3"
+    },
+    {
+      "en": "clothing; costume; dress",
+      "tone": "beghed",
+      "he": "בֶּגֶד",
+      "audio": ""
+    }
+  ],
+  "mixed": [
+    {
+      "en": "staff; rod",
+      "tone": "mate",
+      "he": "מַטֶה",
+      "audio": ""
+    },
+    {
+      "en": "(he) came",
+      "tone": "(hu) ba",
+      "he": "בָּא",
+      "audio": ""
+    },
+    {
+      "en": "roof; rooftop; maximum",
+      "tone": "gag",
+      "he": "גַג",
+      "audio": ""
+    },
+    {
+      "en": "garden; park",
+      "tone": "gan",
+      "he": "גַן",
+      "audio": "http://www.yallahebrew.com/wp-content/uploads/2018/10/garden-in-hebrew-translation.mp3"
+    },
+    {
+      "en": "orchard",
+      "tone": "ghina",
+      "he": "גִנָה",
+      "audio": ""
+    },
+    {
+      "en": "it spins",
+      "tone": "hag",
+      "he": "",
+      "audio": ""
+    },
+    {
+      "en": "legend",
+      "tone": "agada",
+      "he": "אַגָדָה",
+      "audio": ""
+    },
+    {
+      "en": "freedom",
+      "tone": "hofesh",
+      "he": "חוֹפֶשׁ",
+      "audio": "http://www.yallahebrew.com/wp-content/uploads/2018/09/Freedom-in-hebrew-translation.mp3"
+    },
+    {
+      "en": "safety",
+      "tone": "bitahon",
+      "he": "בִּטָחוֹן",
+      "audio": ""
+    },
+    {
+      "en": "one",
+      "tone": "ehad",
+      "he": "אֶחָד",
+      "audio": ""
+    },
+    {
+      "en": "indebted",
+      "tone": "hav",
+      "he": "חָב",
+      "audio": ""
+    },
+    {
+      "en": "wise",
+      "tone": "haham",
+      "he": "חָכָם",
+      "audio": ""
+    },
+    {
+      "en": "said",
+      "tone": "amar",
+      "he": "אָמַר",
+      "audio": ""
+    },
+    {
+      "en": "book",
+      "tone": "sefer",
+      "he": "סֵפֶר",
+      "audio": "http://www.yallahebrew.com/wp-content/uploads/2018/10/book-in-hebrew-translation.mp3"
+    }
+  ]
+}
