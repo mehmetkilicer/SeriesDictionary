@@ -19,10 +19,16 @@
       <PrivateAssets>all</PrivateAssets>
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
     </PackageReference>
+    <PackageReference Include="Microsoft.Extensions.Http" Version="9.0.0" />
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\..\Frontends\SeriesDictionary.Dto\SeriesDictionary.Dto.csproj" />
     <ProjectReference Include="..\SeriesDictionary.Domain\SeriesDictionary.Domain.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Features\Mediator\Queries\WordEpisodeQueries\" />
   </ItemGroup>
 
 </Project>

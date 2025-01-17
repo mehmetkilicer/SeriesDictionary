@@ -147,7 +147,12 @@ namespace SeriesDictionary.Persistence.Migrations
                     b.Property<int>("Season")
                         .HasColumnType("int");
 
+                    b.Property<int>("ShowId")
+                        .HasColumnType("int");
+
                     b.HasKey("Id");
+
+                    b.HasIndex("ShowId");
 
                     b.ToTable("Episodes");
                 });
@@ -215,6 +220,40 @@ namespace SeriesDictionary.Persistence.Migrations
                     b.HasIndex("QuizId");
 
                     b.ToTable("QuizQuestions");
+                });
+
+            modelBuilder.Entity("SeriesDictionary.Domain.Entities.Show", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<string>("Description")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("ImageUrl1")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("ImageUrl2")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("ImageUrl3")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Title")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Type")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("Show");
                 });
 
             modelBuilder.Entity("SeriesDictionary.Domain.Entities.UserProgress", b =>
@@ -303,6 +342,13 @@ namespace SeriesDictionary.Persistence.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
+                    b.Property<string>("Sentence")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<int?>("ShowId")
+                        .HasColumnType("int");
+
                     b.Property<string>("Turkish")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
@@ -310,6 +356,8 @@ namespace SeriesDictionary.Persistence.Migrations
                     b.HasKey("Id");
 
                     b.HasIndex("DifficultyId");
+
+                    b.HasIndex("ShowId");
 
                     b.ToTable("Words");
                 });
@@ -357,6 +405,17 @@ namespace SeriesDictionary.Persistence.Migrations
                     b.Navigation("Category");
 
                     b.Navigation("Word");
+                });
+
+            modelBuilder.Entity("SeriesDictionary.Domain.Entities.Episode", b =>
+                {
+                    b.HasOne("SeriesDictionary.Domain.Entities.Show", "Show")
+                        .WithMany("Episodes")
+                        .HasForeignKey("ShowId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Show");
                 });
 
             modelBuilder.Entity("SeriesDictionary.Domain.Entities.FlashCard", b =>
@@ -434,7 +493,13 @@ namespace SeriesDictionary.Persistence.Migrations
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
+                    b.HasOne("SeriesDictionary.Domain.Entities.Show", "Show")
+                        .WithMany()
+                        .HasForeignKey("ShowId");
+
                     b.Navigation("Difficulty");
+
+                    b.Navigation("Show");
                 });
 
             modelBuilder.Entity("SeriesDictionary.Domain.Entities.WordEpisode", b =>
@@ -490,6 +555,11 @@ namespace SeriesDictionary.Persistence.Migrations
             modelBuilder.Entity("SeriesDictionary.Domain.Entities.Quiz", b =>
                 {
                     b.Navigation("Questions");
+                });
+
+            modelBuilder.Entity("SeriesDictionary.Domain.Entities.Show", b =>
+                {
+                    b.Navigation("Episodes");
                 });
 
             modelBuilder.Entity("SeriesDictionary.Domain.Entities.Word", b =>

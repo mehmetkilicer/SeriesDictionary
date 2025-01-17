@@ -19,7 +19,22 @@
       <PrivateAssets>all</PrivateAssets>
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
     </PackageReference>
+    <PackageReference Include="Microsoft.Extensions.Http" Version="9.0.0" />
     <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="8.0.7" />
+    <PackageReference Include="X.PagedList" Version="10.5.7" />
+    <PackageReference Include="X.PagedList.Mvc.Core" Version="10.5.7" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\Core\SeriesDictionary.Application\SeriesDictionary.Application.csproj" />
+    <ProjectReference Include="..\..\Core\SeriesDictionary.Domain\SeriesDictionary.Domain.csproj" />
+    <ProjectReference Include="..\..\Infrastructure\SeriesDictionary.Persistence\SeriesDictionary.Persistence.csproj" />
+    <ProjectReference Include="..\..\Presentation\SeriesDictionary.WebApi\SeriesDictionary.WebApi.csproj" />
+    <ProjectReference Include="..\SeriesDictionary.Dto\SeriesDictionary.Dto.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="wwwroot\blogy-1.0.0\fonts\icomoon\fonts\" />
   </ItemGroup>
 
 </Project>

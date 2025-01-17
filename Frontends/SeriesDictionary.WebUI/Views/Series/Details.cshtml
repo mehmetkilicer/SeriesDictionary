@@ -1,0 +1,116 @@
+﻿@using Newtonsoft.Json
+@model SeriesDictionary.Application.Features.Mediator.Results.EpisodeResults.ShowDetailsViewModel
+
+
+@{
+
+    ViewData["Title"] = Model?.Show?.Title;
+    Layout = "~/Views/Layout/Index.cshtml";
+}
+
+<div class="site-cover site-cover-sm same-height overlay single-page"
+     style="background-image: url('/blogy-1.0.0/images/yuksek.jpg');
+            height: 450px;
+            background-size: cover;
+            background-position: center;">
+    <div class="container">
+        <div class="row same-height justify-content-center">
+            <div class="col-md-6">
+                <div class="post-entry text-center">
+                    <h2 class="heading text-primary mb-3">Dizi Bölümleri</h2>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<br />
+<br />
+<br />
+<div class="section sec-halfs py-0">
+    <div class="container">
+        <div class="half-content d-lg-flex align-items-stretch">
+            <div class="img"
+                 style="background-image: url('@Model?.Show?.ImageUrl2');
+                        background-size: cover;
+                        background-position: center;
+                        flex: 1;
+                        height: 300px;">
+            </div>
+            <div class="text"
+                 style="flex: 1;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;">
+                <h1 class="display-4 text-primary">@Model?.Show?.Title</h1>
+            </div>
+        </div>
+        <div class="half-content d-lg-flex align-items-stretch">
+            <div class="img order-md-2"
+                 style="background-image: url('@Model?.Show?.ImageUrl3');
+                        background-size: contain;
+                        background-repeat: no-repeat;
+                        background-position: center;
+                        height: 300px;
+                        width: 100%;">
+            </div>
+            <div class="text">
+                <h2 class="heading text-primary mb-3">@Model?.Show?.Description</h2>
+            </div>
+        </div>
+    </div>
+</div>
+
+<section class="section bg-light">
+    <div class="container">
+        <div class="mt-4">
+            <h2 class="text-secondary">Sezonlar</h2>
+            <select id="seasonSelect" class="form-control">
+                <option value="">Sezon Seçin</option>
+                @if (Model?.Seasons != null && Model.Seasons.Any())
+                {
+                    @foreach (var season in Model.Seasons)
+                    {
+                        <option value="@season.SeasonNumber">Sezon @season.SeasonNumber</option>
+                    }
+                }
+            </select>
+        </div>
+        <div id="episodeList" class="mt-4"></div>
+    </div>
+</section>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script>
+    $(document).ready(function () {
+        var episodesData = @Html.Raw(JsonConvert.SerializeObject(Model.Seasons, new JsonSerializerSettings { ReferenceLoopHandling = ReferenceLoopHandling.Ignore }));
+        var episodesDict = {};
+        episodesData.forEach(function (season) {
+            episodesDict[season.SeasonNumber] = season.Episodes;
+        });
+
+        $('#seasonSelect').change(function () {
+            var seasonNumber = $(this).val();
+            $('#episodeList').empty();
+
+            if (seasonNumber && episodesDict[seasonNumber]) {
+                var episodeHtml = '<h3 class="text-secondary">Bölümler</h3>';
+                episodeHtml += '<div class="row">';
+
+                episodesDict[seasonNumber].forEach(function (episode) {
+                    episodeHtml += '<div class="col-md-2 mb-3">';
+                    episodeHtml += '<div class="card">';
+                    episodeHtml += '<div class="card-body">';
+                    episodeHtml += '<h5 class="card-title">Bölüm ' + episode.EpisodeNumber + '</h5>';
+      
+                    episodeHtml += '<a href="/episode/details/' + episode.Id + '" class="btn btn-primary">Kelimelere Git</a>';
+                    episodeHtml += '</div>';
+                    episodeHtml += '</div>';
+                    episodeHtml += '</div>';
+                });
+
+                episodeHtml += '</div>';
+                $('#episodeList').html(episodeHtml);
+            }
+        });
+    });
+</script>

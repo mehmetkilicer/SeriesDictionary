@@ -29,6 +29,7 @@ namespace SeriesDictionary.Persistence.Context
         public DbSet<UserWord> UserWords { get; set; }
         public DbSet<Word> Words { get; set; }
         public DbSet<WordEpisode> WordEpisodes { get; set; }
+        public DbSet<Show> Show { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {

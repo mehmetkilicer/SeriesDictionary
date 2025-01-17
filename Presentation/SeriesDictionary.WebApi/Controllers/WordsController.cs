@@ -1,6 +1,7 @@
 ﻿using MediatR;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using SeriesDictionary.Application.Features.Mediator.Queries.WordQueries;
 using SeriesDictionary.Application.Features.Mediator.Results.WordResults;
 
 namespace SeriesDictionary.WebApi.Controllers
@@ -15,10 +16,13 @@ namespace SeriesDictionary.WebApi.Controllers
         {
             _mediator = mediator;
         }
-        public async Task<IActionResult> WordList()
-        {
-            var values = await _mediator.Send(new GetWordQueryResult());
-            return Ok(values);
-        }
+
+        //[HttpGet("list")] // Endpoint: api/words/list
+        //public async Task<IActionResult> WordList()
+        //{
+        //    // Burada GetWordQuery nesnesini gönderiyoruz
+        //    var values = await _mediator.Send(new GetWordQuery());
+        //    return Ok(values);  // Sonuçları başarıyla döndürüyoruz
+        //}
     }
 }
