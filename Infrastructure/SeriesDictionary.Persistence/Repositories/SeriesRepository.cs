@@ -19,6 +19,14 @@ namespace SeriesDictionary.Persistence.Repositories
             _context = context;
         }
 
+        public async Task<List<Show>> GetSeriesAndMovieAsync()
+        {
+            return await _context.Show
+                .Where(show => show.Type == "Dizi" || show.Type == "Film") // Hem Dizi hem Film olanları getir
+                .ToListAsync();
+        }
+
+
         public async Task<List<Show>> GetSeriesAsync()
         {
             return await _context.Show

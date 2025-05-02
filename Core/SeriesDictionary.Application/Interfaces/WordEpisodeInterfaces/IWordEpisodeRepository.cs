@@ -16,5 +16,7 @@ namespace SeriesDictionary.Application.Interfaces.WordEpisodeInterfaces
 
         Task<List<WordsByEpisodeAndDifficultyDto>> GetWordsByEpisodeAndDifficultyAsync(int episodeId, int difficultyId);
 
+        Task<Episode> GetEpisodeByIdAsync(int episodeId);
+
     }
 }

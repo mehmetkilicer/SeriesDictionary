@@ -1,0 +1,59 @@
+﻿@model SeriesDictionary.Application.Features.Mediator.Commands.ShowCommands.UpdateShowCommand
+
+@{
+    ViewData["Title"] = "UpdateShow";
+    Layout = "~/Views/AdminLayout/Index.cshtml";
+}
+
+
+
+<div class="page-content">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-xl-12">
+                <div class="card">
+                    <div class="card-body">
+                        <h4 class="card-title">Dizi/Film Güncelle</h4>
+                        <p class="card-subtitle mb-4">Aşağıdaki panel üzerinden mevcut içerik bilgilerini güncelleyebilirsiniz.</p>
+                        <form method="post">
+                            <input type="hidden" asp-for="Id" />
+
+                            <div class="form-group">
+                                <label for="exampleInputTitle">Başlık</label>
+                                <input type="text" class="form-control" id="exampleInputTitle" asp-for="Title" placeholder="Başlığı Giriniz">
+                            </div>
+
+                            <div class="form-group">
+                                <label for="exampleInputDescription">Açıklama</label>
+                                <input type="text" class="form-control" id="exampleInputDescription" asp-for="Description" placeholder="Açıklamayı Giriniz">
+                            </div>
+
+                            <div class="form-group">
+                                <label for="exampleInputType">Tür</label>
+                                <input type="text" class="form-control" id="exampleInputType" asp-for="Type" placeholder="Dizi/Film Türünü Giriniz">
+                            </div>
+
+                            <div class="form-group">
+                                <label for="exampleInputImageUrl1">Görsel Url 1</label>
+                                <input type="text" class="form-control" id="exampleInputImageUrl1" asp-for="ImageUrl1" placeholder="1. Görsel Url’sini Giriniz (Opsiyonel)">
+                            </div>
+
+                            <div class="form-group">
+                                <label for="exampleInputImageUrl2">Görsel Url 2</label>
+                                <input type="text" class="form-control" id="exampleInputImageUrl2" asp-for="ImageUrl2" placeholder="2. Görsel Url’sini Giriniz (Opsiyonel)">
+                            </div>
+
+                            <div class="form-group">
+                                <label for="exampleInputImageUrl3">Görsel Url 3</label>
+                                <input type="text" class="form-control" id="exampleInputImageUrl3" asp-for="ImageUrl3" placeholder="3. Görsel Url’sini Giriniz (Opsiyonel)">
+                            </div>
+
+                            <button type="submit" class="btn btn-success waves-effect waves-light">Show Bilgisini Güncelle</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+

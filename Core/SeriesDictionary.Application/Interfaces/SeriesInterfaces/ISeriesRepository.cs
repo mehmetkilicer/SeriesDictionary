@@ -10,5 +10,7 @@ namespace SeriesDictionary.Application.Interfaces.SeriesInterfaces
     public interface ISeriesRepository
     {
         Task<List<Show>> GetSeriesAsync();
+        Task<List<Show>> GetSeriesAndMovieAsync();
+
     }
 }

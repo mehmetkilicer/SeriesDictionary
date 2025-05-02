@@ -1,0 +1,128 @@
+﻿@using Newtonsoft.Json
+@model SeriesDictionary.Dto.QuizDto.QuizViewModel
+@{
+    ViewData["Title"] = "Start";
+    Layout = "~/Views/Layout/Index.cshtml";
+}
+
+
+<div class="container mt-5 d-flex flex-column align-items-center">
+    <h2 class="text-primary mb-4">@Model.EpisodeTitle</h2>
+
+    <div id="quiz-container" class="card shadow-lg p-4 text-center" style="max-width: 600px; width: 100%;">
+        <div id="question-card" class="card bg-light border-0">
+            <div class="card-body">
+                <h4 id="question-title" class="card-title text-dark"></h4>
+                <div id="options-container" class="mt-3 d-grid gap-2"></div>
+            </div>
+        </div>
+
+        <button id="next-button" class="btn btn-primary mt-3 w-100" disabled>Sonraki</button>
+        <button id="submit-button" class="btn btn-success mt-3 w-100 d-none">Gönder</button>
+    </div>
+
+    <div class="progress mt-4" style="width: 600px; max-width: 100%;">
+        <div id="progress-bar" class="progress-bar bg-primary" role="progressbar" style="width: 0%"></div>
+    </div>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script>
+         $(document).ready(function () {
+        var questions = @Html.Raw(JsonConvert.SerializeObject(Model.Questions));
+        var currentQuestionIndex = 0;
+
+           function loadQuestion(index) {
+        if (index < questions.length) {
+            var question = questions[index];
+            $('#question-title').html(question.EnglishWord +
+                ' <button class="btn  play-audio" data-word="' + question.EnglishWord + '">🔊</button>');
+
+            $('#options-container').empty();
+
+            question.Options.forEach(function (option) {
+                var optionDiv = $('<div class="form-check"></div>');
+                var input = $('<input class="form-check-input" type="radio" name="answer-' + index + '" value="' + option + '" id="option-' + index + '-' + option + '">');
+                var label = $('<label class="form-check-label" for="option-' + index + '-' + option + '">' + option + '</label>');
+
+                optionDiv.append(input).append(label);
+                $('#options-container').append(optionDiv);
+            });
+
+            $('#next-button').prop('disabled', true);
+
+            $('input[name="answer-' + index + '"]').change(function () {
+                $('#next-button').prop('disabled', false);
+
+                var selectedAnswer = $(this).val();
+                var isCorrect = selectedAnswer === question.CorrectAnswer;
+
+                $('input[name="answer-' + index + '"]').each(function () {
+                    var optionValue = $(this).val();
+                    var label = $(this).next('label');
+
+                    if (optionValue === question.CorrectAnswer) {
+                        label.css('color', 'green');
+                    } else if (optionValue === selectedAnswer && !isCorrect) {
+                        label.css('color', 'red');
+                    } else {
+                        label.css('color', '');
+                    }
+                });
+            });
+
+        } else {
+            $('#question-card').hide();
+            $('#submit-button').removeClass('d-none');
+            $('#next-button').hide();
+        }
+    }
+
+        loadQuestion(currentQuestionIndex);
+
+        $('#next-button').click(function () {
+            currentQuestionIndex++;
+            loadQuestion(currentQuestionIndex);
+        });
+
+        $(document).on('click', '#submit-button', function () {
+            var answers = [];
+
+            questions.forEach(function (question, index) {
+                var selectedAnswer = $(`input[name="answer-${index}"]:checked`).val();
+                answers.push({ WordId: question.WordId, SelectedAnswer: selectedAnswer || "" });
+            });
+
+            $.ajax({
+                url: '/Quiz/SubmitQuiz',
+                type: 'POST',
+                contentType: 'application/json',
+                data: JSON.stringify({ EpisodeId: @Model.EpisodeId, Answers: answers }),
+                success: function (result) {
+                    var message = `Doğru cevaplar: ${result.correctAnswers} / ${result.totalQuestions}\n\n`;
+                    if (result.incorrectAnswers.length > 0) {
+                        message += "Yanlış Cevaplar:\n";
+                        result.incorrectAnswers.forEach(function (incorrect) {
+                            message += `Soru: ${incorrect.englishWord}\n`;
+                            message += `Doğru Cevap: ${incorrect.correctAnswer}\n`;
+                            message += `Verdiğiniz Cevap: ${incorrect.selectedAnswer}\n\n`;
+                        });
+                    } else {
+                        message += "Tebrikler! Tüm cevaplarınız doğru.";
+                    }
+                    alert(message);
+                },
+                error: function (xhr, status, error) {
+                    alert("Hata oluştu: " + xhr.responseText);
+                }
+            });
+        });
+    });
+        $(document).on("click", ".play-audio", function () {
+        var word = $(this).data("word");
+        var utterance = new SpeechSynthesisUtterance(word);
+        utterance.lang = "en-US";
+        speechSynthesis.speak(utterance);
+    });
+
+</script>

@@ -13,11 +13,13 @@
             height: 450px;
             background-size: cover;
             background-position: center;">
+
+
     <div class="container">
         <div class="row same-height justify-content-center">
             <div class="col-md-6">
                 <div class="post-entry text-center">
-                    <h2 class="heading text-primary mb-3">Dizi Bölümleri</h2>
+                    <h2 class="heading mb-3" style="color: white; font-size: 2rem;">Dizi Bölümleri ve Zorluk Secimi</h2>
                 </div>
             </div>
         </div>
@@ -54,8 +56,9 @@
                         width: 100%;">
             </div>
             <div class="text">
-                <h2 class="heading text-primary mb-3">@Model?.Show?.Description</h2>
+                <h1 class="heading text-primary mb-3" style="font-size: 20px;">@Model?.Show?.Description</h1>
             </div>
+
         </div>
     </div>
 </div>
@@ -75,7 +78,22 @@
                 }
             </select>
         </div>
-        <div id="episodeList" class="mt-4"></div>
+
+        <div class="mt-4">
+            <h2 class="text-secondary">Bölümler</h2>
+            <div id="episodeList" class="row"></div>
+        </div>
+
+        <div class="mt-4">
+            <h2 class="text-secondary">Zorluk Seviyesi Seçin</h2>
+            <div id="difficultyButtons" class="btn-group" role="group" aria-label="Zorluk Seviyesi">
+                <button type="button" class="btn btn-primary difficulty-btn" data-difficulty-id="1" disabled>Çok Kolay</button>
+                <button type="button" class="btn btn-primary difficulty-btn" data-difficulty-id="2" disabled>Kolay</button>
+                <button type="button" class="btn btn-primary difficulty-btn" data-difficulty-id="3" disabled>Orta</button>
+                <button type="button" class="btn btn-primary difficulty-btn" data-difficulty-id="4" disabled>Zor</button>
+                <button type="button" class="btn btn-primary difficulty-btn" data-difficulty-id="5" disabled>Çok Zor</button>
+            </div>
+        </div>
     </div>
 </section>
 
@@ -88,29 +106,73 @@
             episodesDict[season.SeasonNumber] = season.Episodes;
         });
 
+        var selectedEpisodeId = null;
+        var selectedDifficulty = null;
+
+        // ✅ Sezon değiştirildiğinde bölümleri göster
         $('#seasonSelect').change(function () {
             var seasonNumber = $(this).val();
+            loadEpisodes(seasonNumber);
+        });
+
+        // ✅ Aynı sezon seçildiğinde de bölümleri yükle
+        $('#seasonSelect').click(function () {
+            var seasonNumber = $(this).val();
+            if (seasonNumber) {
+                loadEpisodes(seasonNumber);
+            }
+        });
+
+        // ✅ Bölümleri yükleme fonksiyonu
+        function loadEpisodes(seasonNumber) {
             $('#episodeList').empty();
+            selectedEpisodeId = null;
+            $('.difficulty-btn').prop('disabled', true);
 
             if (seasonNumber && episodesDict[seasonNumber]) {
                 var episodeHtml = '<h3 class="text-secondary">Bölümler</h3>';
                 episodeHtml += '<div class="row">';
 
                 episodesDict[seasonNumber].forEach(function (episode) {
-                    episodeHtml += '<div class="col-md-2 mb-3">';
-                    episodeHtml += '<div class="card">';
-                    episodeHtml += '<div class="card-body">';
-                    episodeHtml += '<h5 class="card-title">Bölüm ' + episode.EpisodeNumber + '</h5>';
-      
-                    episodeHtml += '<a href="/episode/details/' + episode.Id + '" class="btn btn-primary">Kelimelere Git</a>';
-                    episodeHtml += '</div>';
-                    episodeHtml += '</div>';
-                    episodeHtml += '</div>';
+                    episodeHtml += `<div class="col-md-2 mb-3">
+                                        <button class="btn btn-secondary episode-btn" data-episode-id="${episode.Id}">Bölüm ${episode.EpisodeNumber}</button>
+                                    </div>`;
                 });
 
                 episodeHtml += '</div>';
                 $('#episodeList').html(episodeHtml);
             }
+        }
+
+        // ✅ Bölüm seçme işlemi
+        $(document).on('click', '.episode-btn', function () {
+            $('.episode-btn').removeClass('btn-primary').addClass('btn-secondary');
+            $(this).removeClass('btn-secondary').addClass('btn-primary');
+            selectedEpisodeId = $(this).data('episode-id');
+
+            $('.difficulty-btn').prop('disabled', false);
         });
+
+        // ✅ Zorluk seviyesi seçildiğinde yönlendirme yap
+        $('.difficulty-btn').click(function () {
+            if (selectedEpisodeId) {
+                selectedDifficulty = $(this).data('difficulty-id');
+                window.location.href = `/Default/Index?episodeId=${selectedEpisodeId}&difficultyId=${selectedDifficulty}`;
+            } else {
+                alert("Lütfen önce bir bölüm seçin.");
+            }
+        });
+
+        // ✅ Zorluk butonlarına aktif sınıf ekleme
+        $('.difficulty-btn').click(function () {
+            $('.difficulty-btn').removeClass('active');
+            $(this).addClass('active');
+        });
+
+        // ✅ Sayfa yenilendiğinde varsayılan değerleri sıfırla
+        $('#seasonSelect').val(""); // Sezon seçimini sıfırla
+        $('#episodeList').empty(); // Bölüm listesini temizle
+        $('.difficulty-btn').prop('disabled', true); // Zorluk butonlarını devre dışı bırak
     });
 </script>
+

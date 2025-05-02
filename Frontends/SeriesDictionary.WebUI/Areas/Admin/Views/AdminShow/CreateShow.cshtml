@@ -1,0 +1,63 @@
+﻿@model SeriesDictionary.Application.Features.Mediator.Commands.ShowCommands.CreateShowCommand
+@{
+    ViewData["Title"] = "Create Show";
+    Layout = "~/Views/AdminLayout/Index.cshtml";
+}
+
+<div class="page-content">
+    <div class="container-fluid">
+        @if (TempData["Error"] != null)
+        {
+            <div class="alert alert-danger">
+                @TempData["Error"]
+            </div>
+        }
+        <div class="row">
+            <div class="col-xl-12">
+                <div class="card">
+                    <div class="card-body">
+                        <h4 class="card-title">Yeni Dizi/Film Girişi</h4>
+                        <p class="card-subtitle mb-4">
+                            Aşağıdaki alanları doldurarak yeni bir içerik ekleyebilirsiniz. Girdiğiniz verilerin doğruluğunu kontrol etmeyi unutmayınız.
+                        </p>
+                        <form asp-action="CreateShow" asp-controller="AdminShow" asp-area="Admin" method="post">
+                            <div class="form-group">
+                                <label for="exampleInputTitle">Başlık</label>
+                                <input type="text" class="form-control" id="exampleInputTitle" asp-for="Title" placeholder="Başlığı Giriniz">
+                                <span asp-validation-for="Title" class="text-danger"></span>
+                            </div>
+                            <div class="form-group">
+                                <label for="exampleInputDescription">Açıklama</label>
+                                <input type="text" class="form-control" id="exampleInputDescription" asp-for="Description" placeholder="Açıklamayı Giriniz">
+                                <span asp-validation-for="Description" class="text-danger"></span>
+                            </div>
+                            <div class="form-group">
+                                <label for="exampleInputType">Tür</label>
+                                <input type="text" class="form-control" id="exampleInputType" asp-for="Type" placeholder="Dizi/Fİlm Türünü Giriniz">
+                                <span asp-validation-for="Type" class="text-danger"></span>
+                            </div>
+                            <div class="form-group">
+                                <label for="exampleInputImageUrl1">Görsel Url 1</label>
+                                <input type="text" class="form-control" id="exampleInputImageUrl1" asp-for="ImageUrl1" placeholder="1. Görsel Url’sini Giriniz (Opsiyonel)">
+                            </div>
+                            <div class="form-group">
+                                <label for="exampleInputImageUrl2">Görsel Url 2</label>
+                                <input type="text" class="form-control" id="exampleInputImageUrl2" asp-for="ImageUrl2" placeholder="2. Görsel Url’sini Giriniz (Opsiyonel)">
+                            </div>
+                            <div class="form-group">
+                                <label for="exampleInputImageUrl3">Görsel Url 3</label>
+                                <input type="text" class="form-control" id="exampleInputImageUrl3" asp-for="ImageUrl3" placeholder="3. Görsel Url’sini Giriniz (Opsiyonel)">
+                            </div>
+                            <button type="submit" class="btn btn-primary waves-effect waves-light">Show Bilgisini Kaydet</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    <script src="~/lib/jquery-validation/dist/jquery.validate.min.js"></script>
+    <script src="~/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js"></script>
+}

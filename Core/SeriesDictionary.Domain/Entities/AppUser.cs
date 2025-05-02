@@ -15,6 +15,7 @@ namespace SeriesDictionary.Domain.Entities
         public string Surname { get; set; }
         public string Email { get; set; }
         public int AppRoleId { get; set; }
+        public string ProfileImage { get; set; }
         public AppRole AppRole { get; set; }
 
         // Relationships

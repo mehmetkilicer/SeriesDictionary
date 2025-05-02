@@ -14,5 +14,7 @@ namespace SeriesDictionary.Application.Features.Mediator.Commands.AppUserCommand
         public string Name { get; set; }
         public string Surname { get; set; }
         public string Email { get; set; }
+        public string ProfileImage { get; set; }
+
     }
 }

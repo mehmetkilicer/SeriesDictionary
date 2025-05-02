@@ -1,15 +1,40 @@
+﻿using System.Reflection;
+using System.Text;
+using MediatR; // ✅ MediatR için namespace ekleyelim
+using Microsoft.AspNetCore.Authentication.JwtBearer;
+using Microsoft.IdentityModel.Tokens;
+using SeriesDictionary.Application; // ✅ Doğru namespace'i ekleyelim
 using SeriesDictionary.Application.Application;
+using SeriesDictionary.Application.Interfaces.AppUserInterfaces;
+using SeriesDictionary.Application.Interfaces.LogoutInterface;
 using SeriesDictionary.Application.Interfaces.MovieInterface;
 using SeriesDictionary.Application.Interfaces.SeriesInterfaces;
 using SeriesDictionary.Application.Interfaces.SeriesInterfaces.SeriesDictionary.Application.Interfaces;
+using SeriesDictionary.Application.Interfaces.WordCloudRepository;
 using SeriesDictionary.Application.Interfaces.WordEpisodeInterfaces;
+using SeriesDictionary.Application.Interfaces.WordInterfaces;
 using SeriesDictionary.Application.Services;
+using SeriesDictionary.Application.Tools;
 using SeriesDictionary.Persistence.Context;
 using SeriesDictionary.Persistence.Repositories;
 
 var builder = WebApplication.CreateBuilder(args);
 
 builder.Services.AddHttpClient();
+
+builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme).AddJwtBearer(opt =>
+{
+    opt.RequireHttpsMetadata = false;
+    opt.TokenValidationParameters = new TokenValidationParameters
+    {
+        ValidAudience = JwtTokenDefaults.ValidAudience,
+        ValidIssuer = JwtTokenDefaults.ValidIssuer,
+        ClockSkew = TimeSpan.Zero,
+        IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(JwtTokenDefaults.Key)),
+        ValidateLifetime = true,
+        ValidateIssuerSigningKey = true
+    };
+});
 
 builder.Services.AddCors(opt =>
 {
@@ -29,6 +54,10 @@ builder.Services.AddScoped<IWordEpisodeRepository, WordEpisodeRepository>();
 builder.Services.AddScoped<IMovieRepository, MovieRepository>();
 builder.Services.AddScoped<ISeriesRepository, SeriesRepository>();
 builder.Services.AddScoped<IShowRepository, ShowRepository>();
+builder.Services.AddScoped<IWordCloudRepository, WordCloudRepository>();
+builder.Services.AddScoped<IWordRepository, WordRepository>();
+builder.Services.AddScoped<IAppUserRepository, AppUserRepository>();
+builder.Services.AddScoped<ILogoutRepository, LogoutRepository>();
 
 builder.Services.AddControllers()
     .AddJsonOptions(options =>
@@ -38,12 +67,17 @@ builder.Services.AddControllers()
 
 builder.Services.AddApplicationService(builder.Configuration);
 
-// Add services to the container.
-// builder.Services.AddControllers(); // Bu sat�r zaten yukar�da var, tekrarlamaya gerek yok
+// ✅ MediatR servisini ekleyelim
+builder.Services.AddMediatR(cfg => cfg.RegisterServicesFromAssemblies(Assembly.GetExecutingAssembly()));
 
-// Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
+// Add services to the container.
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
+
+builder.Services.AddControllers().AddJsonOptions(options =>
+{
+    options.JsonSerializerOptions.PropertyNamingPolicy = null; // PascalCase'i koru
+});
 
 var app = builder.Build();
 
@@ -57,9 +91,7 @@ if (app.Environment.IsDevelopment())
 app.UseCors("CorsPolicy");
 
 app.UseHttpsRedirection();
-
+app.UseAuthentication();
 app.UseAuthorization();
-
 app.MapControllers();
-
 app.Run();

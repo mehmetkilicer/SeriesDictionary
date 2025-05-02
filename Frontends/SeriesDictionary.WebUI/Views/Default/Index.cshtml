@@ -1,11 +1,35 @@
-﻿@* @model List<SeriesDictionary.Dto.WordDto.ResultWordDto> *@
+﻿@model PagedList<SeriesDictionary.Dto.WordDto.WordsByEpisodeAndDifficultyDto>
+
 @{
+    int counter = (Model.CurrentPage - 1) * Model.PageSize + 1; // Sayfalama için doğru sıra numarası
+    ViewData["Title"] = Model?.Items?.FirstOrDefault()?.Show?.Title;
     Layout = "~/Views/Layout/Index.cshtml";
-    int count = 0;
 }
-@* 
+
+<div class="site-cover site-cover-sm same-height overlay single-page"
+     style="background-image: url('/blogy-1.0.0/images/yuksek.jpg');
+            height: 200px;
+            background-size: cover;
+            background-position: center;">
+    <div class="container">
+        <div class="row same-height justify-content-center">
+            <div class="col-md-6">
+                <div class="post-entry text-center">
+                    <h2 class="heading mb-3" style="color: white; font-size: 2rem;">Kelimeler</h2>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
 <div class="container mt-5">
-    <h2 class="mb-4">Kelime Listesi</h2>
+    <div class="d-flex justify-content-between align-items-center mb-4">
+        <h2 class="text-secondary">Kelime Listesi</h2>
+        <button class="btn" style="background-color: rgb(33,66,82); color: white; border: none;"
+                onclick="location.href='@Url.Action("Start", "Quiz", new { episodeId = ViewData["EpisodeId"], difficultyId = ViewData["DifficultyId"] })'">
+            Quize Git
+        </button>
+    </div>
     <table class="table table-striped">
         <thead>
             <tr>
@@ -15,15 +39,123 @@
             </tr>
         </thead>
         <tbody>
-            @foreach (var item in Model)
+            @if (Model.Items.Any())
             {
-                count++;
+                foreach (var item in Model.Items)
+                {
+                    <tr>
+                        <td>@counter</td>
+                        <td>
+                            @item.English
+                   
+                        </td>
+                        <td>
+                            <button class="btn btn-sm btn-primary play-audio" data-word="@item.English">
+                                🔊
+                            </button>
+                        </td>
+                        <td>@item.Turkish</td>
+                        <td>
+                            <button class="btn show-sentence" style="background-color: rgb(33,66,82); color: white; border: none;"
+                                    data-sentence="@item.Sentence" data-bs-toggle="modal" data-bs-target="#sentenceModal">
+                                Sentence
+                            </button>
+                        </td>
+                        <td>
+                            <button class="btn my-words" style="background-color: rgb(33,66,82); color: white; border: none;">
+                                Öğrendim
+                            </button>
+                        </td>
+                    </tr>
+                    counter++;
+                }
+            }
+            else
+            {
                 <tr>
-                    <td>@count</td>
-                    <td>@item.English</td>
-                    <td>@item.Turkish</td>
+                    <td colspan="3" class="text-center text-muted">Kelime bulunamadı.</td>
                 </tr>
             }
         </tbody>
+
     </table>
-</div> *@
+
+    <!-- Sayfalama -->
+    <div class="pagination d-flex justify-content-center">
+        @if (Model.CurrentPage > 1)
+        {
+            <a href="@Url.Action("Index", new { episodeId = ViewData["EpisodeId"], difficultyId = ViewData["DifficultyId"], page = Model.CurrentPage - 1, pageSize = Model.PageSize })" class="btn btn-primary me-2">Önceki</a>
+        }
+
+        @* Sayfalama düğmelerini sınırlandırma *@
+        @{
+            int startPage = Math.Max(1, Model.CurrentPage - 2); // Mevcut sayfanın 2 öncesinden başlar
+            int endPage = Math.Min(Model.TotalPages, Model.CurrentPage + 2); // Mevcut sayfanın 2 sonrasına kadar gider
+        }
+
+        @if (startPage > 1)
+        {
+            <a href="@Url.Action("Index", new { episodeId = ViewData["EpisodeId"], difficultyId = ViewData["DifficultyId"], page = 1, pageSize = Model.PageSize })" class="btn btn-outline-primary me-2">1</a>
+            @if (startPage > 2)
+            {
+                <span class="btn btn-outline-secondary me-2">...</span>
+            }
+        }
+
+        @for (int i = startPage; i <= endPage; i++)
+        {
+            <a href="@Url.Action("Index", new { episodeId = ViewData["EpisodeId"], difficultyId = ViewData["DifficultyId"], page = i, pageSize = Model.PageSize })"
+               class="btn @(i == Model.CurrentPage ? "btn-secondary disabled" : "btn-outline-primary me-2")">@i</a>
+        }
+
+        @if (endPage < Model.TotalPages)
+        {
+            @if (endPage < Model.TotalPages - 1)
+            {
+                <span class="btn btn-outline-secondary me-2">...</span>
+            }
+            <a href="@Url.Action("Index", new { episodeId = ViewData["EpisodeId"], difficultyId = ViewData["DifficultyId"], page = Model.TotalPages, pageSize = Model.PageSize })" class="btn btn-outline-primary me-2">@Model.TotalPages</a>
+        }
+
+        @if (Model.CurrentPage < Model.TotalPages)
+        {
+            <a href="@Url.Action("Index", new { episodeId = ViewData["EpisodeId"], difficultyId = ViewData["DifficultyId"], page = Model.CurrentPage + 1, pageSize = Model.PageSize })" class="btn btn-primary">Sonraki</a>
+        }
+    </div>
+
+</div>
+<div class="modal fade" id="sentenceModal" tabindex="-1" aria-labelledby="sentenceModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="sentenceModalLabel">Örnek Cümle</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body" id="modalSentenceContent">
+                <!-- Cümle burada gösterilecek -->
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Kapat</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script>
+    $(document).ready(function () {
+        $(".show-sentence").on("click", function () {
+            var sentence = $(this).data("sentence");
+            $("#modalSentenceContent").text(sentence);
+        });
+
+        $(".play-audio").on("click", function () {
+            var word = $(this).data("word");
+            var utterance = new SpeechSynthesisUtterance(word);
+            utterance.lang = "en-US"; 
+            speechSynthesis.speak(utterance);
+        });
+    });
+</script>
+

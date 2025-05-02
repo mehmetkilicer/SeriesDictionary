@@ -40,6 +40,13 @@ namespace SeriesDictionary.Persistence.Repositories
             return new List<Word>();
         }
 
+        public async Task<Episode> GetEpisodeByIdAsync(int episodeId)
+        {
+            return await _context.Episodes
+                .Include(e => e.Show)
+                .FirstOrDefaultAsync(e => e.Id == episodeId);
+        }
+
 
         public async Task<List<WordsByEpisodeAndDifficultyDto>> GetWordsByEpisodeAndDifficultyAsync(int episodeId, int difficultyId)
         {

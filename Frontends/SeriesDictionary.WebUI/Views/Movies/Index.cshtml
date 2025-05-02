@@ -10,15 +10,15 @@
             @foreach (var item in Model)
             {
                 <div class="col-md-3">
-                    <a href="single.html" class="h-entry mb-30 v-height gradient">
+                    <a href="@Url.Action("Details", "Movies", new { id = item.Id })" class="h-entry mb-30 v-height gradient">
                         <!-- Image URL -->
                         <div class="featured-img" style="background-image: url('@item.ImageUrl1'); background-size: contain; background-repeat: no-repeat; background-position: center; height: 200px;"></div>
                         <div class="text">
                             <!-- Title -->
                             <h2 style="color: #FFFFFF; font-weight: bold; font-size: 18px;">@item.Title</h2>
                             <!-- Description -->
-                            <p style="color: #FFFFFF; font-weight: bold; font-size: 10px;">@item.Description</p>
-                        </div>
+@*                             <p style="color: #FFFFFF; font-weight: bold; font-size: 10px;">@item.Description</p>
+ *@                        </div>
 
 
                     </a>

@@ -1,0 +1,32 @@
+﻿@model List<SeriesDictionary.Application.Features.Mediator.Results.ListShowResults.GetWordCloudQueryResult>
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Layout/Index.cshtml";
+}
+
+
+<section class="section bg-light">
+    <div class="container">
+        <div class="row align-items-stretch retro-layout">
+            @foreach (var item in Model)
+            {
+                <div class="col-md-3">
+                    <a href="@Url.Action("Details", "WordCloud", new { id = item.Id })" class="h-entry mb-30 v-height gradient">
+                        <!-- Image URL -->
+                        <div class="featured-img" style="background-image: url('@item.ImageUrl1'); background-size: contain; background-repeat: no-repeat; background-position: center; height: 200px;"></div>
+                        <div class="text">
+                            <!-- Title -->
+                            <h2 style="color: #FFFFFF; font-weight: bold; font-size: 18px;">@item.Title</h2>
+                            <!-- Description -->
+                            <p style="color: #FFFFFF; font-weight: bold; font-size: 10px;">@item.Description</p>
+                         </div>
+
+
+                    </a>
+                </div>
+            }
+        </div>
+    </div>
+</section>
+
+

@@ -40,7 +40,14 @@
 	<link rel="stylesheet" href="~/blogy-1.0.0/css/flatpickr.min.css">
 
 
-	<title>Blogy &mdash; Free Bootstrap 5 Website Template by Untree.co</title>
+	<title>Series Dictionary</title>
+    <style>
+        #difficultyButtons {
+            display: flex;
+            justify-content: space-between; /* Aralarındaki mesafeyi dengelemek için */
+            gap: 10px; /* Butonlar arasına eşit boşluk ekler */
+        }
+    </style>
 </head>
 <body>
 
@@ -89,12 +96,16 @@
                                 <li><a href="@Url.Action("Index", "Movies")">Film Listesi</a></li>
 
 
-                                <li><a href="/Blog/ContactPage/">İletisim</a></li>
-                                <li><a href="/Blog/ContactPage/">Kelimelerim</a></li>
-                                <li><a href="/Blog/ContactPage/">Quiz</a></li>
+                                <li><a href="@Url.Action("Index", "Contact")">İletisim</a></li>
+                                <li><a href="@Url.Action("Index", "Movies")">Kelimelerim</a></li>
+                                <li><a href="@Url.Action("Index", "QuizSeries")">Quiz</a></li>
 
                                 <li><a href="/Writer/Dashboard/Index/">Panel</a></li>
-								<li><a href="/Login/LogOut/">Cıkıs Yap</a></li>
+                                <li>
+                                    <a href="#" onclick="document.getElementById('logout-form').submit();">Çıkış Yap</a>
+                                    <form id="logout-form" asp-action="Logout" asp-controller="Login" method="post" style="display: none;"></form>
+                                </li>
+
 							</ul>
 
 						</div>

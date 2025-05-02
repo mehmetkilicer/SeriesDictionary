@@ -1,8 +1,11 @@
 ﻿using MediatR;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using SeriesDictionary.Application.Features.Mediator.Commands.ShowCommands;
 using SeriesDictionary.Application.Features.Mediator.Queries.ListShowQueries;
+using SeriesDictionary.Application.Features.Mediator.Queries.ShowQueries;
 using SeriesDictionary.Application.Features.Mediator.Results.ListShowResults;
+using SeriesDictionary.Application.Features.Mediator.Results.ShowResults;
 
 namespace SeriesDictionary.WebApi.Controllers
 {
@@ -47,6 +50,28 @@ namespace SeriesDictionary.WebApi.Controllers
             return Ok(series); // HTTP 200 OK ile sonucu döndürüyoruz
         }
 
+        [HttpGet("seriesandmovies")]
+        public async Task<ActionResult<List<GetSeriesAndMoviesQueryResult>>> GetSeriesAndMovies()
+        {
+            var seriesAndMovies = await _mediator.Send(new GetSeriesAndMoviesQuery());
+            if (seriesAndMovies == null || seriesAndMovies.Count == 0)
+            {
+                return NotFound("No series and movies found.");
+            }
+            return Ok(seriesAndMovies);
+        }
+
+        [HttpGet("wordcloud")]
+        public async Task<ActionResult<List<GetWordCloudQueryResult>>> GetWordCloud()
+        {
+            var wordCloud = await _mediator.Send(new GetWordCloudQuery());
+            if (wordCloud == null || wordCloud.Count == 0)
+            {
+                return NotFound("No word cloud found.");
+            }
+            return Ok(wordCloud);
+        }
+
         [HttpGet("details/{id}")]
         [ProducesResponseType(StatusCodes.Status200OK)]
         [ProducesResponseType(StatusCodes.Status404NotFound)]
@@ -63,7 +88,37 @@ namespace SeriesDictionary.WebApi.Controllers
 
             return Ok(result);
         }
+        [HttpPost("create")]
+        public async Task<IActionResult> CreateShow(CreateShowCommand command)
+        {
+            await _mediator.Send(command);
+            return Ok("Show Basarı ile eklendi.");
+        }
+        [HttpDelete("delete")]
+        public async Task<IActionResult> DeleteShow(int id)
+        {
+            await _mediator.Send(new RemoveShowCommand(id));
+            return Ok("Show Basarı ile silindi.");
+        }
+        [HttpPut("update")]
+        public async Task<IActionResult> UpdateShow(UpdateShowCommand command)
+        {
+            await _mediator.Send(command);
+            return Ok("Show Basarı ile güncellendi.");
+        }
 
+
+        [HttpGet("{id}")]
+        public async Task<IActionResult> GetShowById(int id)
+        {
+            var query = new GetShowByIdQuery(id);
+            GetShowByIdQueryResult result = await _mediator.Send(query);
+
+            if (result == null)
+                return NotFound();
+
+            return Ok(result);
+        }
 
     }
 }

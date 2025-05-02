@@ -1,0 +1,109 @@
+﻿@model SeriesDictionary.Application.Features.Mediator.Results.EpisodeResults.ShowDetailsViewModel
+@using Newtonsoft.Json
+
+@{
+    ViewData["Title"] = Model?.Show?.Title;
+    Layout = "~/Views/Layout/Index.cshtml";
+    int episodeId = ViewData["EpisodeId"] != null ? (int)ViewData["EpisodeId"] : 0; // EpisodeId'yi al
+}
+
+
+
+
+
+<div class="site-cover site-cover-sm same-height overlay single-page"
+     style="background-image: url('/blogy-1.0.0/images/yuksek.jpg');
+            height: 450px;
+            background-size: cover;
+            background-position: center;">
+
+
+    <div class="container">
+        <div class="row same-height justify-content-center">
+            <div class="col-md-6">
+                <div class="post-entry text-center">
+                    <h2 class="heading text-primary mb-3">Dizi Bölümleri</h2>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<br />
+<br />
+<br />
+<div class="section sec-halfs py-0">
+    <div class="container">
+        <div class="half-content d-lg-flex align-items-stretch">
+            <div class="img"
+                 style="background-image: url('@Model?.Show?.ImageUrl1');
+                        background-size: cover;
+                        background-position: center;
+                        flex: 1;
+                        height: 300px;">
+            </div>
+            <div class="text"
+                 style="flex: 1;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;">
+                <h1 class="display-4 text-primary">@Model?.Show?.Title</h1>
+            </div>
+        </div>
+        
+           @*  <div class="img order-md-2"
+                 style="background-image: url('@Model?.Show?.ImageUrl3');
+                        background-size: contain;
+                        background-repeat: no-repeat;
+                        background-position: center;
+                        height: 300px;
+                        width: 100%;">
+            </div>  *@
+            <div class="text">
+                <h1 class="heading text-primary mb-3" style="font-size: 20px;">@Model?.Show?.Description</h1>
+            </div>
+
+    </div>
+</div>
+
+<div class="section bg-light mt-5">
+    <div class="container">
+        <div class="mt-4">
+            <h2 class="text-secondary">Zorluk Seviyesi Seçin</h2>
+            <div id="difficultyButtons" class="btn-group" role="group" aria-label="Zorluk Seviyesi">
+                <button type="button" class="btn btn-primary difficulty-btn" data-difficulty-id="1" style="margin-right: 30px;">Çok Kolay</button>
+                <button type="button" class="btn btn-primary difficulty-btn" data-difficulty-id="2" style="margin-right: 30px;">Kolay</button>
+                <button type="button" class="btn btn-primary difficulty-btn" data-difficulty-id="3" style="margin-right: 30px;">Orta</button>
+                <button type="button" class="btn btn-primary difficulty-btn" data-difficulty-id="4" style="margin-right: 30px;">Zor</button>
+                <button type="button" class="btn btn-primary difficulty-btn" data-difficulty-id="5" style="margin-right: 30px;">Çok Zor</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script>
+    $(document).ready(function () {
+        var episodeId = @Html.Raw(JsonConvert.SerializeObject(episodeId)); // EpisodeId'yi alın
+
+        // Zorluk seviyesi butonlarına tıklama işlemi
+        $('.difficulty-btn').click(function () {
+            var difficultyId = $(this).data('difficulty-id'); // Seçilen zorluk seviyesi
+
+            if (episodeId && difficultyId) {
+                // Yeni URL oluştur ve yönlendir
+                var apiUrl = `/Default/Index?episodeId=${episodeId}&difficultyId=${difficultyId}`;
+                window.location.href = apiUrl; // Yönlendirme
+            } else {
+                alert("EpisodeId veya Zorluk Seviyesi eksik!"); // Güvenlik için kontrol
+            }
+        });
+
+        // Aktif buton görünümü ekleme
+        $('.difficulty-btn').click(function () {
+            $('.difficulty-btn').removeClass('active'); // Önceki 'active' sınıfını kaldır
+            $(this).addClass('active'); // Şu anki butona ekle
+        });
+    });
+</script>
+
+

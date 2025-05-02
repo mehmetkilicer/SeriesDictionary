@@ -1,0 +1,71 @@
+﻿@model SeriesDictionary.Application.Features.Mediator.Results.AppUserResults.GetUserByIdQueryResult
+@{
+    ViewData["Title"] = "UpdateUser";
+    Layout = "~/Views/AdminLayout/Index.cshtml";
+}
+
+<div class="page-content">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-xl-12">
+                @if (Model == null)
+                {
+                    <div class="alert alert-danger" role="alert">
+                        Kullanıcı bilgileri yüklenemedi.
+                    </div>
+                }
+                else
+                {
+                    <div class="card">
+                        <div class="card-body">
+                            <h4 class="card-title">User Bilgisi Güncelleme Sayfası</h4>
+                            <p class="card-subtitle mb-4">User alanına güncellemek istediğiniz veri girişini aşağıdaki panelden yapabilirsiniz.</p>
+                            @if (TempData["Error"] != null)
+                            {
+                                <div class="alert alert-danger" role="alert">
+                                    @TempData["Error"]
+                                </div>
+                            }
+                            <form asp-action="UpdateUser" asp-route-id="@Model.AppUserId" method="post">
+                                <input type="hidden" name="AppUserId" value="@Model.AppUserId" />
+                                <input type="hidden" name="AppRoleId" value="@Model.AppRoleId" /> <!-- API için gerekli -->
+
+                                <div class="form-group">
+                                    <label for="exampleInputName">Ad</label>
+                                    <input type="text" class="form-control" id="exampleInputName" name="Name" value="@Model.Name" placeholder="Adınızı Giriniz">
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="exampleInputUsername">Kullanıcı Adı</label>
+                                    <input type="text" class="form-control" id="exampleInputUsername" name="Username" value="@Model.Username" placeholder="Kullanıcı Adını Giriniz">
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="exampleInputSurname">Soyad</label>
+                                    <input type="text" class="form-control" id="exampleInputSurname" name="Surname" value="@Model.Surname" placeholder="Soyadınızı Giriniz">
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="exampleInputEmail">E-posta</label>
+                                    <input type="email" class="form-control" id="exampleInputEmail" name="Email" value="@Model.Email" placeholder="E-posta Giriniz">
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="exampleInputImageUrl">User Görsel</label>
+                                    <input type="text" class="form-control" id="exampleInputImageUrl" name="ProfileImage" value="@Model.ProfileImage" placeholder="Görsel URL Bilgisini Giriniz">
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="exampleInputPassword">Yeni Şifre (Opsiyonel)</label>
+                                    <input type="password" class="form-control" id="exampleInputPassword" name="Password" placeholder="Yeni şifreyi giriniz">
+                                </div>
+
+                                <button type="submit" class="btn btn-primary waves-effect waves-light">User'ı Kaydet</button>
+                            </form>
+                        </div>
+                    </div>
+                }
+            </div>
+        </div>
+    </div>
+</div>

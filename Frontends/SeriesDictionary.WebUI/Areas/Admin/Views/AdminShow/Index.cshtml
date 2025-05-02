@@ -1,0 +1,61 @@
+﻿@model List<SeriesDictionary.Application.Features.Mediator.Results.ListShowResults.GetSeriesAndMoviesQueryResult>
+
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/AdminLayout/Index.cshtml";
+}
+
+<div class="page-content">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-xl-12">
+                <div class="card">
+                    <div class="card-body">
+                        <h4 class="card-title">Dizi ve Filmler Listesi</h4>
+                        <p class="card-subtitle mb-4">
+                            Sistemde kayıtlı olan dizi ve filmleri buradan yönetebilirsiniz.
+                        </p>
+                        <div class="table-responsive">
+                            <table class="table mb-0">
+                                <thead>
+                                    <tr>
+                                        <th>#</th>
+                                        <th>Başlık</th>
+                                        <th>Açıklama</th>
+                                        <th>Görseller</th>
+                                        <th>Sil</th>
+                                        <th>Güncelle</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    @{
+                                        int count = 0;
+                                    }
+                                    @foreach (var item in Model)
+                                    {
+                                        count++;
+                                        <tr>
+                                            <td>@count</td>
+                                            <td>@item.Title</td>
+                                            <td>@item.Description</td>
+                                            <td>
+                                                @if (!string.IsNullOrEmpty(item.ImageUrl1))
+                                                {
+                                                    <img src="@item.ImageUrl1" width="50" height="50" style="margin-right:5px;" />
+                                                }
+                                  
+                                            </td>
+                                            <td><a href="/Admin/AdminShow/RemoveShow/@item.Id" class="btn btn-outline-danger">Sil</a></td>
+                                            <td><a href="/Admin/AdminShow/UpdateShow/@item.Id" class="btn btn-outline-success">Güncelle</a></td>
+                                        </tr>
+                                    }
+                                </tbody>
+                            </table>
+                            <a href="/Admin/AdminShow/CreateShow" class="btn btn-outline-primary mt-3">Yeni Dizi/Film Ekle</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
