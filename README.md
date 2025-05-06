@@ -36,5 +36,13 @@ Bu proje, yabancı diziler ve filmlerden alınan İngilizce kelimeleri zorluk se
 | **Repository Pattern** | Veri erişim yönetimi |
 
 ## 🖥️ Ekran Görüntüleri
-
+![1](https://github.com/user-attachments/assets/c9b99227-b3dc-48e0-8bb1-e5c47ffa57fb)
+![2](https://github.com/user-attachments/assets/808cedfa-5ed3-4184-b9b7-150c52c683dc)
+![3](https://github.com/user-attachments/assets/b6a9f552-f79f-4041-a2f6-edfecf43b50e)
+![4](https://github.com/user-attachments/assets/0a52b2df-f06d-4e57-9fe1-936277ccfe67)
+![5](https://github.com/user-attachments/assets/68e78e6e-6866-4b83-80ed-7fb1dda2bdbb)
+![6](https://github.com/user-attachments/assets/ae34a259-d8fe-4acc-95b8-168ef66ca311)
+![7](https://github.com/user-attachments/assets/66a612ff-f388-4665-a864-047b5279f9b3)
+![8](https://github.com/user-attachments/assets/9437b3ae-25c3-4344-aead-527290e4c4cf)
+![9](https://github.com/user-attachments/assets/198f62f4-6941-4114-bcea-caf7aa2e267a)
 
